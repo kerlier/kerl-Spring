@@ -1,0 +1,25 @@
+server:
+  port: 8083
+
+
+spring:
+  datasource:
+    db1:
+      username: root
+      password: root
+      jdbcUrl: jdbc:mysql://192.168.5.134:3306/test?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    db2:
+      username: root
+      password: root
+      jdbcUrl: jdbc:mysql://192.168.5.136:3306/test?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+mybatis:
+#  db1-mapper-locations: classpath:db1/*.xml
+#  db2-mapper-locations: classpath:db2/*.xml
+  db1-mapper-locations: file:E://mapper//db1//*.xml
+  db2-mapper-locations: file:E://mapper//db2//*.xml
+  db1-aliases-package: com.fashion.spring.pojo
+  db2-aliases-package: com.fashion.spring.pojo
