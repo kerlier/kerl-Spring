@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring-mybatis-multi-source" />
         <module name="basic-spring" />
+        <module name="spring-api-swagger" />
         <module name="basic-spring-mybatis" />
       </profile>
     </annotationProcessing>
@@ -16,6 +17,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="basic-spring" options="-parameters" />
       <module name="basic-spring-mybatis" options="-parameters" />
+      <module name="spring-api-swagger" options="-parameters" />
       <module name="spring-mybatis-multi-source" options="-parameters" />
     </option>
   </component>

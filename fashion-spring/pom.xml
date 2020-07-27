@@ -12,6 +12,7 @@
     <module>basic-spring</module>
     <module>basic-spring-mybatis</module>
     <module>spring-mybatis-multi-source</module>
+      <module>spring-api-swagger</module>
   </modules>
 
   <name>fashion-spring</name>
