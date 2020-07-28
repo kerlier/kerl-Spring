@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.seckill.mapper.GoodMapper" >
+  <resultMap id="BaseResultMap" type="good" >
+    <id column="good_id" property="goodId" jdbcType="INTEGER" />
+    <result column="good_name" property="goodName" jdbcType="VARCHAR" />
+    <result column="count" property="count" jdbcType="INTEGER" />
+    <result column="sale_count" property="saleCount" jdbcType="INTEGER" />
+    <result column="version" property="version" jdbcType="INTEGER" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    good_id, good_name, count, sale_count, version
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="goodExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from good
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from good
+    where good_id = #{goodId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from good
+    where good_id = #{goodId,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="goodExample" >
+    delete from good
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="good" >
+    insert into good (good_id, good_name, count, 
+      sale_count, version)
+    values (#{goodId,jdbcType=INTEGER}, #{goodName,jdbcType=VARCHAR}, #{count,jdbcType=INTEGER}, 
+      #{saleCount,jdbcType=INTEGER}, #{version,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="good" >
+    insert into good
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="goodId != null" >
+        good_id,
+      </if>
+      <if test="goodName != null" >
+        good_name,
+      </if>
+      <if test="count != null" >
+        count,
+      </if>
+      <if test="saleCount != null" >
+        sale_count,
+      </if>
+      <if test="version != null" >
+        version,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="goodId != null" >
+        #{goodId,jdbcType=INTEGER},
+      </if>
+      <if test="goodName != null" >
+        #{goodName,jdbcType=VARCHAR},
+      </if>
+      <if test="count != null" >
+        #{count,jdbcType=INTEGER},
+      </if>
+      <if test="saleCount != null" >
+        #{saleCount,jdbcType=INTEGER},
+      </if>
+      <if test="version != null" >
+        #{version,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="goodExample" resultType="java.lang.Integer" >
+    select count(*) from good
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update good
+    <set >
+      <if test="record.goodId != null" >
+        good_id = #{record.goodId,jdbcType=INTEGER},
+      </if>
+      <if test="record.goodName != null" >
+        good_name = #{record.goodName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.count != null" >
+        count = #{record.count,jdbcType=INTEGER},
+      </if>
+      <if test="record.saleCount != null" >
+        sale_count = #{record.saleCount,jdbcType=INTEGER},
+      </if>
+      <if test="record.version != null" >
+        version = #{record.version,jdbcType=INTEGER},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update good
+    set good_id = #{record.goodId,jdbcType=INTEGER},
+      good_name = #{record.goodName,jdbcType=VARCHAR},
+      count = #{record.count,jdbcType=INTEGER},
+      sale_count = #{record.saleCount,jdbcType=INTEGER},
+      version = #{record.version,jdbcType=INTEGER}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="good" >
+    update good
+    <set >
+      <if test="goodName != null" >
+        good_name = #{goodName,jdbcType=VARCHAR},
+      </if>
+      <if test="count != null" >
+        count = #{count,jdbcType=INTEGER},
+      </if>
+      <if test="saleCount != null" >
+        sale_count = #{saleCount,jdbcType=INTEGER},
+      </if>
+      <if test="version != null" >
+        version = #{version,jdbcType=INTEGER},
+      </if>
+    </set>
+    where good_id = #{goodId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="good" >
+    update good
+    set good_name = #{goodName,jdbcType=VARCHAR},
+      count = #{count,jdbcType=INTEGER},
+      sale_count = #{saleCount,jdbcType=INTEGER},
+      version = #{version,jdbcType=INTEGER}
+    where good_id = #{goodId,jdbcType=INTEGER}
+  </update>
+  
+  <!-- 这里没有锁，需要在代码中加入悲观锁，悲观锁的效率太低，我们使用乐观锁的形式 -->
+  <update id="updateAmount">
+    update 
+       good 
+    set count = count-#{buys},
+        sale_count = sale_count+ #{buys}
+    where good_id = #{goodId}
+  </update>
+  
+  <update id="updateAmountVersion">
+    update 
+       good 
+    set count = count - #{buys},
+        sale_count = sale_count + #{buys},
+        version = version + 1
+    where good_id = #{goodId} and version = #{version}
+  </update>
+</mapper>

@@ -2,13 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9948e2e0-f731-4cc5-9d14-9b7874b3f953" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-api-swagger/src/main/java/com/api/swagger/controller/UrlVersionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-api-swagger/src/main/java/com/api/swagger/pojo/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-api-swagger/src/main/java/com/api/swagger/version/ApiVersion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-job-schedule/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-job-schedule/src/main/java/com/fashion/job/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-job-schedule/src/main/java/com/fashion/job/WrapperRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-job-schedule/src/main/java/com/fashion/job/controller/ScheduleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-job-schedule/src/main/java/com/fashion/job/pojo/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-job-schedule/src/main/java/com/fashion/job/schedule/ScheduleTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-job-schedule/src/main/java/com/fashion/job/service/FirstService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-job-schedule/src/main/java/com/fashion/job/service/SecondService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-job-schedule/src/main/java/com/fashion/job/service/impl/FirstServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-job-schedule/src/main/java/com/fashion/job/service/impl/SecondServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-seckill/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-seckill/src/main/java/com/seckill/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-seckill/src/main/java/com/seckill/controller/GoodController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-seckill/src/main/java/com/seckill/mapper/GoodMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-seckill/src/main/java/com/seckill/mapper/GoodOrderMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-seckill/src/main/java/com/seckill/pojo/Good.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-seckill/src/main/java/com/seckill/pojo/GoodExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-seckill/src/main/java/com/seckill/pojo/GoodOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-seckill/src/main/java/com/seckill/pojo/GoodOrderExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-seckill/src/main/java/com/seckill/pojo/SeckillRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-seckill/src/main/java/com/seckill/service/GoodService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-seckill/src/main/java/com/seckill/service/impl/GoodServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-seckill/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-seckill/src/main/resources/mapper/GoodMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-seckill/src/main/resources/mapper/GoodOrderMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-seckill/src/test/java/com/seckill/controller/SeckillControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-api-swagger/src/main/java/com/api/swagger/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-api-swagger/src/main/java/com/api/swagger/config/SwaggerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-api-swagger/src/main/java/com/api/swagger/controller/SwaggerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-api-swagger/src/main/java/com/api/swagger/controller/SwaggerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-api-swagger/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-api-swagger/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/spring-mybatis-multi-source/target/" />
@@ -16,6 +40,8 @@
     <ignored path="$PROJECT_DIR$/basic-spring-mybatis/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/spring-api-swagger/target/" />
+    <ignored path="$PROJECT_DIR$/spring-job-schedule/target/" />
+    <ignored path="$PROJECT_DIR$/spring-seckill/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,146 +53,109 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-api-swagger/src/main/java/com/api/swagger/controller/SwaggerController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="39" column="33" lean-forward="true" selection-start-line="39" selection-start-column="3" selection-end-line="39" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#474#475#0" expanded="true" />
-                <element signature="e#516#517#0" expanded="true" />
-                <element signature="e#641#642#0" expanded="true" />
-                <element signature="e#683#684#0" expanded="true" />
-                <element signature="e#724#725#0" expanded="true" />
-                <element signature="e#768#769#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/spring-api-swagger/src/main/java/com/api/swagger/controller/UrlVersionController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="38" column="30" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#724#725#0" expanded="true" />
-                <element signature="e#764#765#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-api-swagger/src/main/java/com/api/swagger/config/SwaggerConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="57" column="90" selection-start-line="57" selection-start-column="90" selection-end-line="57" selection-end-column="90" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-api-swagger/src/main/java/com/api/swagger/version/ApiVersion.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/20.0/guava-20.0-sources.jar!/com/google/common/base/Predicates.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="152" column="29" selection-start-line="152" selection-start-column="20" selection-end-line="152" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2-sources.jar!/springfox/documentation/spring/web/plugins/ApiSelectorBuilder.java">
+        <entry file="file://$PROJECT_DIR$/spring-seckill/src/main/java/com/seckill/mapper/GoodMapper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
-              <caret line="28" column="31" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/springfox/springfox-core/2.9.2/springfox-core-2.9.2.jar!/springfox/documentation/builders/PathSelectors.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-api-swagger/src/main/java/com/api/swagger/pojo/Person.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
+              <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#383#384#0" expanded="true" />
-                <element signature="e#416#417#0" expanded="true" />
-                <element signature="e#468#469#0" expanded="true" />
-                <element signature="e#512#513#0" expanded="true" />
-                <element signature="e#542#543#0" expanded="true" />
-                <element signature="e#568#569#0" expanded="true" />
-                <element signature="e#606#607#0" expanded="true" />
-                <element signature="e#636#637#0" expanded="true" />
-                <element signature="e#774#775#0" expanded="true" />
-                <element signature="e#810#811#0" expanded="true" />
-                <element signature="e#838#839#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-api-swagger/src/main/java/com/api/swagger/pojo/Response.java">
+        <entry file="file://$PROJECT_DIR$/spring-seckill/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="19" column="19" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="19" />
+            <state relative-caret-position="651">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-seckill/src/main/java/com/seckill/service/GoodService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-seckill/src/main/java/com/seckill/mapper/GoodOrderMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#484#485#0" expanded="true" />
-                <element signature="e#511#512#0" expanded="true" />
-                <element signature="e#551#552#0" expanded="true" />
-                <element signature="e#583#584#0" expanded="true" />
-                <element signature="e#613#614#0" expanded="true" />
-                <element signature="e#639#640#0" expanded="true" />
-                <element signature="e#677#678#0" expanded="true" />
-                <element signature="e#707#708#0" expanded="true" />
-                <element signature="e#733#734#0" expanded="true" />
-                <element signature="e#760#761#0" expanded="true" />
-                <element signature="e#795#796#0" expanded="true" />
-                <element signature="e#827#828#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-api-swagger/src/main/java/com/api/swagger/Application.java">
+        <entry file="file://$PROJECT_DIR$/basic-spring-mybatis/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
+            <state relative-caret-position="636">
+              <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/basic-spring-mybatis/src/main/java/com/fashion/spring/mapper/UserMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="4" column="23" selection-start-line="4" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-seckill/src/main/java/com/seckill/Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#189#190#0" expanded="true" />
-                <element signature="e#227#228#0" expanded="true" />
+                <element signature="e#236#237#0" expanded="true" />
+                <element signature="e#297#298#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-seckill/src/main/java/com/seckill/service/impl/GoodServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="26" column="60" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-seckill/src/test/java/com/seckill/controller/SeckillControllerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="53" selection-start-line="53" selection-end-line="53" />
             </state>
           </provider>
         </entry>
@@ -176,9 +165,19 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="FxmlFile" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>com.pojo.G</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>g</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -186,7 +185,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/spring-api-swagger/pom.xml" />
         <option value="$PROJECT_DIR$/spring-api-swagger/src/main/java/com/api/swagger/Application.java" />
         <option value="$PROJECT_DIR$/spring-api-swagger/src/main/java/com/api/swagger/pojo/Request.java" />
         <option value="$PROJECT_DIR$/spring-api-swagger/src/main/java/com/api/swagger/pojo/Response.java" />
@@ -197,6 +195,39 @@
         <option value="$PROJECT_DIR$/spring-api-swagger/src/main/java/com/api/swagger/config/SwaggerConfig.java" />
         <option value="$PROJECT_DIR$/spring-api-swagger/src/main/java/com/api/swagger/controller/SwaggerController.java" />
         <option value="$PROJECT_DIR$/spring-api-swagger/src/main/java/com/api/swagger/controller/UrlVersionController.java" />
+        <option value="$PROJECT_DIR$/spring-job-schedule/src/main/java/com/fashion/job/schedule/Application.java" />
+        <option value="$PROJECT_DIR$/spring-job-schedule/src/main/java/com/fashion/job/Application.java" />
+        <option value="$PROJECT_DIR$/spring-job-schedule/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-job-schedule/src/main/java/com/fashion/job/schedule/ScheduleTask.java" />
+        <option value="$PROJECT_DIR$/spring-job-schedule/src/main/java/com/fashion/job/service/Service.java" />
+        <option value="$PROJECT_DIR$/spring-job-schedule/src/main/java/com/fashion/job/service/SecondService.java" />
+        <option value="$PROJECT_DIR$/spring-api-swagger/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-job-schedule/src/main/java/com/fashion/job/pojo/Person.java" />
+        <option value="$PROJECT_DIR$/spring-job-schedule/src/main/java/com/fashion/job/service/impl/SecondServiceImpl.java" />
+        <option value="$PROJECT_DIR$/spring-job-schedule/src/main/java/com/fashion/job/WrapperRequest.java" />
+        <option value="$PROJECT_DIR$/spring-job-schedule/src/main/java/com/fashion/job/service/FirstService.java" />
+        <option value="$PROJECT_DIR$/spring-job-schedule/src/main/java/com/fashion/job/service/impl/FirstServiceImpl.java" />
+        <option value="$PROJECT_DIR$/spring-job-schedule/src/main/java/com/fashion/job/controller/ScheduleController.java" />
+        <option value="$PROJECT_DIR$/spring-seckill/src/main/java/com/seckill/pojo/GoodOrder.java" />
+        <option value="$PROJECT_DIR$/spring-seckill/src/main/resources/generator.xml" />
+        <option value="$PROJECT_DIR$/spring-seckill/src/main/resources/generator.properties" />
+        <option value="$PROJECT_DIR$/spring-seckill/src/main/resources/generatorConfig.xml" />
+        <option value="$PROJECT_DIR$/spring-seckill/src/main/java/com/seckill/pojo/Good.java" />
+        <option value="$PROJECT_DIR$/spring-seckill/src/main/java/com/seckill/service/GoodService.java" />
+        <option value="$PROJECT_DIR$/spring-seckill/src/main/java/com/seckill/mapper/GoodOrderMapper.java" />
+        <option value="$PROJECT_DIR$/spring-seckill/src/main/resources/mapper/GoodOrderMapper.xml" />
+        <option value="$PROJECT_DIR$/spring-seckill/src/main/resources/mapper/GoodMapper.xml" />
+        <option value="$PROJECT_DIR$/basic-spring-mybatis/src/main/resources/application-dev.yml" />
+        <option value="$PROJECT_DIR$/spring-seckill/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/spring-seckill/src/main/java/com/seckill/Application.java" />
+        <option value="$PROJECT_DIR$/spring-seckill/src/main/java/com/seckill/pojo/SeckillRequest.java" />
+        <option value="$PROJECT_DIR$/spring-seckill/src/main/java/com/seckill/controller/GoodController.java" />
+        <option value="$PROJECT_DIR$/spring-seckill/src/main/java/com/seckill/service/impl/GoodServiceImpl.java" />
+        <option value="$PROJECT_DIR$/spring-seckill/src/test/java/com/seckill/controller/SeckillControllerTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/basic-spring-mybatis/src/main/java/com/fashion/spring/mapper/UserMapper.java" />
+        <option value="$PROJECT_DIR$/spring-seckill/src/main/java/com/seckill/mapper/GoodMapper.java" />
+        <option value="$PROJECT_DIR$/spring-seckill/pom.xml" />
       </list>
     </option>
   </component>
@@ -206,6 +237,37 @@
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Profiles" type="6783ec58:MavenProjectsStructure$ProfilesNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spring-seckill" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spring-seckill" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spring-seckill" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spring-seckill" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="mybatis-generator" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="205" />
@@ -221,6 +283,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -231,25 +295,25 @@
             <path>
               <item name="fashion-spring" type="b2602c69:ProjectViewProjectNode" />
               <item name="fashion-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-api-swagger" type="462c0819:PsiDirectoryNode" />
+              <item name="basic-spring-mybatis" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="fashion-spring" type="b2602c69:ProjectViewProjectNode" />
               <item name="fashion-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-api-swagger" type="462c0819:PsiDirectoryNode" />
+              <item name="basic-spring-mybatis" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="fashion-spring" type="b2602c69:ProjectViewProjectNode" />
               <item name="fashion-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-api-swagger" type="462c0819:PsiDirectoryNode" />
+              <item name="basic-spring-mybatis" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="fashion-spring" type="b2602c69:ProjectViewProjectNode" />
               <item name="fashion-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-api-swagger" type="462c0819:PsiDirectoryNode" />
+              <item name="basic-spring-mybatis" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -257,7 +321,75 @@
             <path>
               <item name="fashion-spring" type="b2602c69:ProjectViewProjectNode" />
               <item name="fashion-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-api-swagger" type="462c0819:PsiDirectoryNode" />
+              <item name="basic-spring-mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fashion-spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fashion-spring" type="462c0819:PsiDirectoryNode" />
+              <item name="basic-spring-mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="fashion" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fashion-spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fashion-spring" type="462c0819:PsiDirectoryNode" />
+              <item name="basic-spring-mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="fashion" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fashion-spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fashion-spring" type="462c0819:PsiDirectoryNode" />
+              <item name="basic-spring-mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="fashion" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fashion-spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fashion-spring" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-seckill" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fashion-spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fashion-spring" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-seckill" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fashion-spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fashion-spring" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-seckill" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fashion-spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fashion-spring" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-seckill" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fashion-spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fashion-spring" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-seckill" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -266,72 +398,76 @@
             <path>
               <item name="fashion-spring" type="b2602c69:ProjectViewProjectNode" />
               <item name="fashion-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-api-swagger" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-seckill" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="seckill" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="fashion-spring" type="b2602c69:ProjectViewProjectNode" />
               <item name="fashion-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-api-swagger" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-seckill" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="swagger" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fashion-spring" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fashion-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-api-swagger" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="swagger" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fashion-spring" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fashion-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-api-swagger" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="swagger" type="462c0819:PsiDirectoryNode" />
+              <item name="seckill" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="fashion-spring" type="b2602c69:ProjectViewProjectNode" />
               <item name="fashion-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-api-swagger" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-seckill" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="swagger" type="462c0819:PsiDirectoryNode" />
-              <item name="version" type="462c0819:PsiDirectoryNode" />
+              <item name="seckill" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fashion-spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fashion-spring" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-seckill" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fashion-spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fashion-spring" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-seckill" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fashion-spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fashion-spring" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-seckill" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="CatdeaLogs" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/spring-seckill/src/main/resources/mapper" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\git\Spring\fashion-spring\spring-seckill\src\main\resources\mapper" />
+      <recent name="E:\git\Spring\fashion-spring\spring-seckill\src\main\java\com\seckill\mapper" />
+      <recent name="E:\git\Spring\fashion-spring\spring-seckill\src\main\java\com\seckill\pojo" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -345,7 +481,33 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Application (2)">
+    <configuration name="Application (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fashion.job.Application" />
+      <module name="spring-job-schedule" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fashion.job.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.seckill.Application" />
+      <module name="spring-seckill" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.seckill.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.api.swagger.Application" />
       <module name="spring-api-swagger" />
@@ -359,8 +521,43 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SeckillControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-seckill" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.seckill.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.seckill.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.seckill.controller.SeckillControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeckillControllerTest.testPurchase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-seckill" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.seckill.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.seckill.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.seckill.controller.SeckillControllerTest" />
+      <option name="METHOD_NAME" value="testPurchase" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Application (2)" />
+        <item itemvalue="JUnit.SeckillControllerTest.testPurchase" />
+        <item itemvalue="JUnit.SeckillControllerTest" />
+        <item itemvalue="Application.Application (1)" />
         <item itemvalue="Application.Application" />
       </list>
     </recent_temporary>
@@ -378,21 +575,31 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="SeckillControllerTest_testPurchase - 2020.07.28 at 10h 47m 05s.xml">
+      <configuration name="SeckillControllerTest.testPurchase" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SeckillControllerTest - 2020.07.28 at 10h 47m 33s.xml">
+      <configuration name="SeckillControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SeckillControllerTest_testPurchase - 2020.07.28 at 10h 48m 41s.xml">
+      <configuration name="SeckillControllerTest.testPurchase" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22707888" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22921109" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.3297062" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2742111" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.45593035" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -400,153 +607,22 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3297062" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" visible="true" weight="0.22959739" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.32995737" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/basic-spring-mybatis/src/main/java/com/fashion/spring/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/basic-spring-mybatis/src/main/java/com/fashion/spring/mapper/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-mybatis-multi-source/src/main/java/com/fashion/spring/controller/BasicController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-mybatis-multi-source/src/main/java/com/fashion/spring/datasource/DataSource1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-mybatis-multi-source/src/main/java/com/fashion/spring/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-mybatis-multi-source/src/main/resources/db2/CustomerMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-mybatis-multi-source/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-mybatis-multi-source/src/main/resources/db1/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/basic-spring-mybatis/src/main/java/com/fashion/spring/pojo/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/basic-spring-mybatis/src/main/java/com/fashion/spring/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/basic-spring-mybatis/src/main/java/com/fashion/spring/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-mybatis-multi-source/src/main/java/com/fashion/spring/service/impl/CustomerServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-api-swagger/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/swagger/swagger-annotations/1.5.20/swagger-annotations-1.5.20.jar!/io/swagger/annotations/Api.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="41" column="18" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/swagger/swagger-annotations/1.5.20/swagger-annotations-1.5.20.jar!/io/swagger/annotations/ApiOperation.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-api-swagger/src/main/java/com/api/swagger/pojo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/swagger/swagger-annotations/1.5.20/swagger-annotations-1.5.20.jar!/io/swagger/annotations/ApiParam.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/swagger/swagger-annotations/1.5.20/swagger-annotations-1.5.20.jar!/io/swagger/annotations/ApiModelProperty.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-api-swagger/src/main/java/com/api/swagger/pojo/Request.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#605#606#0" expanded="true" />
-            <element signature="e#638#639#0" expanded="true" />
-            <element signature="e#690#691#0" expanded="true" />
-            <element signature="e#734#735#0" expanded="true" />
-            <element signature="e#475#476#0" expanded="true" />
-            <element signature="e#507#508#0" expanded="true" />
-            <element signature="e#557#558#0" expanded="true" />
-            <element signature="e#599#600#0" expanded="true" />
-            <element signature="e#630#631#0" expanded="true" />
-            <element signature="e#656#657#0" expanded="true" />
-            <element signature="e#695#696#0" expanded="true" />
-            <element signature="e#725#726#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/ApiSelectorBuilder.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
@@ -647,20 +723,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-api-swagger/src/main/java/com/api/swagger/config/SwaggerConfig.java">
+    <entry file="file://$PROJECT_DIR$/spring-api-swagger/src/main/java/com/api/swagger/controller/UrlVersionController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="57" column="90" selection-start-line="57" selection-start-column="90" selection-end-line="57" selection-end-column="90" />
+        <state relative-caret-position="333">
+          <caret line="38" column="30" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#724#725#0" expanded="true" />
+            <element signature="e#764#765#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-api-swagger/src/main/java/com/api/swagger/controller/SwaggerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="39" column="33" lean-forward="true" selection-start-line="39" selection-start-column="3" selection-end-line="39" selection-end-column="33" />
+        <state relative-caret-position="319">
+          <caret line="44" column="21" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#474#475#0" expanded="true" />
@@ -673,14 +751,339 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-api-swagger/src/main/java/com/api/swagger/controller/UrlVersionController.java">
+    <entry file="file://$PROJECT_DIR$/spring-api-swagger/src/main/java/com/api/swagger/config/SwaggerConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="38" column="30" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
+        <state relative-caret-position="414">
+          <caret line="57" column="90" selection-start-line="57" selection-start-column="90" selection-end-line="57" selection-end-column="90" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#724#725#0" expanded="true" />
-            <element signature="e#764#765#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-mybatis-multi-source/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="35" column="21" selection-start-line="32" selection-start-column="8" selection-end-line="35" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.0.12.RELEASE/spring-context-5.0.12.RELEASE.jar!/org/springframework/scheduling/annotation/Scheduled.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.0.12.RELEASE/spring-context-5.0.12.RELEASE-sources.jar!/org/springframework/scheduling/annotation/Scheduled.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="116" column="21" selection-start-line="116" selection-start-column="9" selection-end-line="116" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-api-swagger/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-job-schedule/src/main/java/com/fashion/job/service/impl/SecondServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#226#227#0" expanded="true" />
+            <element signature="e#253#254#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-job-schedule/src/main/java/com/fashion/job/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-job-schedule/src/main/java/com/fashion/job/schedule/ScheduleTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-job-schedule/src/main/java/com/fashion/job/controller/ScheduleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1134">
+          <caret line="67" column="26" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-job-schedule/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="19" selection-start-line="14" selection-start-column="3" selection-end-line="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-job-schedule/src/main/java/com/fashion/job/WrapperRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-job-schedule/src/main/java/com/fashion/job/service/FirstService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="10" column="71" selection-start-line="10" selection-start-column="71" selection-end-line="10" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-job-schedule/src/main/java/com/fashion/job/pojo/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-job-schedule/src/main/java/com/fashion/job/service/SecondService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-job-schedule/src/main/java/com/fashion/job/service/impl/FirstServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-seckill/src/main/resources/generator.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="62" lean-forward="true" selection-start-column="20" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-seckill/src/main/resources/generatorConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1050">
+          <caret line="10" column="72" selection-start-line="10" selection-start-column="72" selection-end-line="10" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-seckill/src/main/java/com/seckill/pojo/GoodExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic-spring-mybatis/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-seckill/src/main/resources/mapper/GoodMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="65" column="16" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-seckill/src/main/resources/mapper/GoodOrderMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2293">
+          <caret line="115" column="14" selection-start-line="115" selection-start-column="14" selection-end-line="115" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic-spring-mybatis/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="13" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic-spring-mybatis/src/main/java/com/fashion/spring/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-seckill/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic-spring/src/main/java/com/fashion/spring/controller/ReadController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-seckill/src/main/java/com/seckill/pojo/SeckillRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="27" />
+          <folding>
+            <element signature="e#149#150#0" expanded="true" />
+            <element signature="e#178#179#0" expanded="true" />
+            <element signature="e#223#224#0" expanded="true" />
+            <element signature="e#259#260#0" expanded="true" />
+            <element signature="e#292#293#0" expanded="true" />
+            <element signature="e#320#321#0" expanded="true" />
+            <element signature="e#363#364#0" expanded="true" />
+            <element signature="e#397#398#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-seckill/src/main/java/com/seckill/pojo/GoodOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+          <folding>
+            <element signature="e#201#202#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-seckill/src/main/java/com/seckill/pojo/GoodOrderExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-seckill/src/main/java/com/seckill/controller/GoodController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#463#464#0" expanded="true" />
+            <element signature="e#487#488#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-seckill/src/main/java/com/seckill/pojo/Good.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-seckill/src/main/java/com/seckill/service/impl/GoodServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="26" column="60" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-seckill/src/main/java/com/seckill/service/GoodService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-seckill/src/test/java/com/seckill/controller/SeckillControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-seckill/src/main/java/com/seckill/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#236#237#0" expanded="true" />
+            <element signature="e#297#298#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-seckill/src/main/java/com/seckill/mapper/GoodOrderMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic-spring-mybatis/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="636">
+          <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic-spring-mybatis/src/main/java/com/fashion/spring/mapper/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="23" selection-start-line="4" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-seckill/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-seckill/src/main/java/com/seckill/mapper/GoodMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -688,9 +1091,78 @@
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>spring-job-schedule</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>
