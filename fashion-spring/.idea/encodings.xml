@@ -4,9 +4,17 @@
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/basic-spring" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/basic-spring-mybatis" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/basic-spring-mybatis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/basic-spring/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fashion-cloud-config/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-api-swagger" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-api-swagger/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-job-schedule" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-job-schedule/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-mybatis-multi-source" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-mybatis-multi-source/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-seckill" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-seckill/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
   </component>
 </project>

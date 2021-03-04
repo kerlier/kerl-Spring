@@ -93,16 +93,12 @@ public class GoodServiceImpl implements GoodService {
 		
 		return true;
 	}
-	
-	
+
     private void waitForLock() {
-    	
     	try {
 			Thread.sleep(new Random().nextInt(5)+1);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
     }
-
-
 }
