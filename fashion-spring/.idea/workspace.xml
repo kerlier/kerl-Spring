@@ -44,20 +44,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9948e2e0-f731-4cc5-9d14-9b7874b3f953" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/fashion-spring.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fashion-cloud-config/fashion-cloud-config.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fashion-cloud-config/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fashion-cloud-config/src/main/java/com/fahsion/cloud/config/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fashion-cloud-config/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-seckill/src/main/java/com/seckill/util/DingTalkVerifyUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fashion-cloud-config/src/main/java/com/fahsion/cloud/config/controller/ConfigController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nacos-config/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nacos-config/src/main/java/com/nacos/config/application/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nacos-config/src/main/java/com/nacos/config/application/controller/ConfigController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nacos-config/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fashion-cloud-config/src/main/java/com/fahsion/cloud/config/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-cloud-config/src/main/java/com/fahsion/cloud/config/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fashion-cloud-config/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-cloud-config/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fashion-cloud-config/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-cloud-config/target/classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-seckill/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-seckill/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-seckill/src/main/java/com/seckill/service/impl/GoodServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-seckill/src/main/java/com/seckill/service/impl/GoodServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +115,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Java/fashion-java/fashion-java-log" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../fashion-cloud-config" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -128,7 +127,7 @@
       <recent name="E:\git\Spring\fashion-spring\spring-seckill\src\main\java\com\seckill\pojo" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application">
+  <component name="RunManager" selected="Spring Boot.Application (1)">
     <configuration name="Application (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.seckill.Application" />
       <module name="spring-seckill" />
@@ -155,28 +154,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SeckillControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-seckill" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.seckill.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.seckill.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.seckill.controller.SeckillControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -197,6 +183,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="nacos-config" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nacos.config.application.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.nacos.config.application.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="fashion-cloud-config" />
       <extension name="coverage">
@@ -212,11 +211,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.Application (1)" />
         <item itemvalue="Spring Boot.Application" />
         <item itemvalue="Application.DingTalkVerifyUtil" />
         <item itemvalue="Application.Application (2)" />
         <item itemvalue="JUnit.SeckillControllerTest.testPurchase" />
-        <item itemvalue="JUnit.SeckillControllerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -231,7 +230,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583804986252</updated>
-      <workItem from="1614667678522" duration="11759000" />
+      <workItem from="1614667678522" duration="14664000" />
+      <workItem from="1615183307598" duration="5371000" />
     </task>
     <servers />
   </component>
@@ -259,52 +259,53 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="121" y="0" key="#Project_Structure" timestamp="1614849149421">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="121" y="0" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1614849149421" />
-    <state x="421" y="98" key="FileChooserDialogImpl" timestamp="1614752335618">
+    <state x="421" y="98" key="FileChooserDialogImpl" timestamp="1615184745645">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="98" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1614752335618" />
-    <state width="1237" height="230" key="GridCell.Tab.0.bottom" timestamp="1614850284564">
+    <state x="421" y="98" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1615184745645" />
+    <state width="1237" height="255" key="GridCell.Tab.0.bottom" timestamp="1615189589553">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="230" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1614850284564" />
-    <state width="1237" height="230" key="GridCell.Tab.0.center" timestamp="1614850284563">
+    <state width="1237" height="255" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1615189589553" />
+    <state width="1237" height="255" key="GridCell.Tab.0.center" timestamp="1615189589553">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="230" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1614850284563" />
-    <state width="1237" height="230" key="GridCell.Tab.0.left" timestamp="1614850284563">
+    <state width="1237" height="255" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1615189589553" />
+    <state width="1237" height="255" key="GridCell.Tab.0.left" timestamp="1615189589553">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="230" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1614850284563" />
-    <state width="1237" height="230" key="GridCell.Tab.0.right" timestamp="1614850284563">
+    <state width="1237" height="255" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1615189589553" />
+    <state width="1237" height="255" key="GridCell.Tab.0.right" timestamp="1615189589553">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="230" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1614850284563" />
-    <state width="1237" height="230" key="GridCell.Tab.1.bottom" timestamp="1614850284564">
+    <state width="1237" height="255" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1615189589553" />
+    <state width="1237" height="255" key="GridCell.Tab.1.bottom" timestamp="1615189589553">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="230" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1614850284564" />
-    <state width="1237" height="230" key="GridCell.Tab.1.center" timestamp="1614850284564">
+    <state width="1237" height="255" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1615189589553" />
+    <state width="1237" height="255" key="GridCell.Tab.1.center" timestamp="1615189589553">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="230" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1614850284564" />
-    <state width="1237" height="230" key="GridCell.Tab.1.left" timestamp="1614850284564">
+    <state width="1237" height="255" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1615189589553" />
+    <state width="1237" height="255" key="GridCell.Tab.1.left" timestamp="1615189589553">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="230" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1614850284564" />
-    <state width="1237" height="230" key="GridCell.Tab.1.right" timestamp="1614850284564">
+    <state width="1237" height="255" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1615189589553" />
+    <state width="1237" height="255" key="GridCell.Tab.1.right" timestamp="1615189589553">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="230" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1614850284564" />
-    <state x="28" y="6" key="new project wizard" timestamp="1614849114038">
+    <state width="1237" height="255" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1615189589553" />
+    <state x="15" y="0" key="new project wizard" timestamp="1615188205605">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="28" y="6" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1614849114038" />
+    <state x="15" y="0" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1615188205605" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

@@ -16,6 +16,7 @@
       <module>spring-job-schedule</module>
       <module>spring-seckill</module>
     <module>fashion-cloud-config</module>
+    <module>nacos-config</module>
   </modules>
 
   <name>fashion-spring</name>

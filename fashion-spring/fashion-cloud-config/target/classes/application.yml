@@ -9,5 +9,9 @@ spring:
       label: dev
   application:
     name: config
+management:
+  endpoint:
+    shutdown:
+      enabled: false
 server:
   port: 9090

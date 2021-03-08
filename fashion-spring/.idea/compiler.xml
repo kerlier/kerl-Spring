@@ -10,6 +10,7 @@
         <module name="basic-spring-mybatis" />
         <module name="spring-job-schedule" />
         <module name="fashion-cloud-config" />
+        <module name="nacos-config" />
         <module name="spring-api-swagger" />
         <module name="spring-seckill" />
         <module name="basic-spring" />
@@ -21,6 +22,7 @@
       <module name="basic-spring" options="-parameters" />
       <module name="basic-spring-mybatis" options="-parameters" />
       <module name="fashion-cloud-config" options="-parameters" />
+      <module name="nacos-config" options="-parameters" />
       <module name="spring-api-swagger" options="-parameters" />
       <module name="spring-job-schedule" options="-parameters" />
       <module name="spring-mybatis-multi-source" options="-parameters" />
