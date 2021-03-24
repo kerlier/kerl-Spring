@@ -21,3 +21,43 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+*.jar
+!/gradle/wrapper/gradle-wrapper.jar
+*.war
+*~
+*.class
+*.lock
+*.DS_Store
+*.swp
+*.out
+target/
+build/
+*.iml
+*.ipr
+*.iws
+.gradle/
+.settings/
+.classpath
+.project
+.metadata/
+.idea/
+fashion-spring/.idea/
+fashion-spring/.idea/workspace.xml
+.mvn/
+logs/
+null/
+dev.properties
+dependency-reduced-pom.xml
+*.rdb
+log/
+mybatis-config.xml
+* application-*.yml
+application-*.properties
+!*/src/test/resources/application.yml
+!*/src/test/resources/application-*.yml
+!*/src/test/resources/application.properties
+!*/src/test/resources/application-*.properties
+*.perm
+*.bak
+*.log

@@ -42,3 +42,13 @@ server:
 5. 配置nacos
 
 ```
+
+### Util
+#### ReflectionUtils反射工具类
+```
+Input input = new Input("test-aaaa");
+//查找方法
+Method method = ReflectionUtils.findMethod(Input.class, "getName");
+//执行方法
+Object invoke = ReflectionUtils.invokeMethod(method,input);
+```
