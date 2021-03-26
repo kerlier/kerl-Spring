@@ -11,6 +11,7 @@
         <module name="spring-job-schedule" />
         <module name="fashion-cloud-config" />
         <module name="nacos-config" />
+        <module name="fashion-spring-redis" />
         <module name="spring-api-swagger" />
         <module name="fashion-spring-clickhouse" />
         <module name="spring-seckill" />
@@ -25,6 +26,7 @@
       <module name="basic-spring-mybatis" options="-parameters" />
       <module name="fashion-cloud-config" options="-parameters" />
       <module name="fashion-spring-clickhouse" options="-parameters" />
+      <module name="fashion-spring-redis" options="-parameters" />
       <module name="fashion-spring-rocketmq" options="-parameters" />
       <module name="nacos-config" options="-parameters" />
       <module name="spring-api-swagger" options="-parameters" />

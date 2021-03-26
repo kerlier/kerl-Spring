@@ -8,6 +8,7 @@
     <file url="file://$PROJECT_DIR$/basic-spring/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/fashion-cloud-config/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/fashion-spring-clickhouse/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fashion-spring-redis/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/fashion-spring-rocketmq/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/nacos-config/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-api-swagger" charset="UTF-8" />

@@ -44,19 +44,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9948e2e0-f731-4cc5-9d14-9b7874b3f953" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/fashion-spring-clickhouse/fashion-spring-clickhouse.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fashion-spring-clickhouse/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fashion-spring-rocketmq/fashion-spring-rocketmq.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fashion-spring-rocketmq/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fashion-spring-rocketmq/src/main/java/com/fashion/spring/rocketmq/consumer/RocketmqListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fashion-spring-rocketmq/src/main/java/com/fashion/spring/rocketmq/producer/RocketmqProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fashion-spring-rocketmq/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nacos-config/src/main/java/com/nacos/config/application/controller/Input.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nacos-config/src/test/java/com/test/InputInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nacos-config/src/test/java/com/test/TestInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nacos-config/src/test/java/com/test/TestReflection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fashion-spring-redis/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fashion-spring-redis/src/main/java/com/fashion/spring/redis/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fashion-spring-redis/src/main/java/com/fashion/spring/redis/annotation/RedisLockAnnotation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fashion-spring-redis/src/main/java/com/fashion/spring/redis/aspect/RedisLockAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fashion-spring-redis/src/main/java/com/fashion/spring/redis/controller/RedisController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fashion-spring-redis/src/main/java/com/fashion/spring/redis/enums/RedisLockTypeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fashion-spring-redis/src/main/java/com/fashion/spring/redis/queue/RedisLockDefinitionHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fashion-spring-redis/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fashion-spring-redis/src/test/java/com/fashion/spring/test/AppTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -78,6 +74,8 @@
       <list>
         <option value="FxmlFile" />
         <option value="Interface" />
+        <option value="Enum" />
+        <option value="package-info" />
         <option value="Class" />
       </list>
     </option>
@@ -119,7 +117,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/fashion-spring-redis/src/main/resources" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -129,31 +127,19 @@
       <recent name="com.nacos.config.application.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\git-repo\kerl-Spring\fashion-spring\fashion-spring-redis\src\main\resources" />
       <recent name="E:\git\Spring\fashion-spring\spring-seckill\src\main\resources\mapper" />
       <recent name="E:\git\Spring\fashion-spring\spring-seckill\src\main\java\com\seckill\mapper" />
       <recent name="E:\git\Spring\fashion-spring\spring-seckill\src\main\java\com\seckill\pojo" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestReflection">
-    <configuration name="Application (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.seckill.Application" />
-      <module name="spring-seckill" />
+  <component name="RunManager" selected="Spring Boot.Application (2)">
+    <configuration name="AppTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fashion.spring.test.AppTest" />
+      <module name="fashion-spring-redis" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.seckill.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DingTalkVerifyUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.seckill.util.DingTalkVerifyUtil" />
-      <module name="spring-seckill" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.seckill.util.*" />
+          <option name="PATTERN" value="com.fashion.spring.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -198,6 +184,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Application (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="fashion-spring-redis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fashion.spring.redis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fashion.spring.redis.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="fashion-cloud-config" />
       <extension name="coverage">
@@ -213,11 +212,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.Application (2)" />
+        <item itemvalue="Application.AppTest" />
         <item itemvalue="Application.TestReflection" />
         <item itemvalue="Spring Boot.Application (1)" />
         <item itemvalue="Spring Boot.Application" />
-        <item itemvalue="Application.DingTalkVerifyUtil" />
-        <item itemvalue="Application.Application (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -236,7 +235,7 @@
       <workItem from="1615183307598" duration="7035000" />
       <workItem from="1615276227731" duration="6075000" />
       <workItem from="1616566850726" duration="462000" />
-      <workItem from="1616567381791" duration="1198000" />
+      <workItem from="1616567381791" duration="12403000" />
     </task>
     <servers />
   </component>
@@ -267,58 +266,66 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="121" y="0" key="#Project_Structure" timestamp="1616567410729">
+    <state x="121" y="0" key="#Project_Structure" timestamp="1616723226079">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="121" y="0" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1616567410729" />
-    <state x="446" y="49" key="#com.intellij.ide.util.MemberChooser" timestamp="1616568127255">
+    <state x="121" y="0" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1616723226079" />
+    <state x="446" y="49" key="#com.intellij.ide.util.MemberChooser" timestamp="1616722940441">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="446" y="49" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1616568127255" />
+    <state x="446" y="49" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1616722940441" />
     <state x="371" y="90" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1615877117895">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="371" y="90" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1615877117895" />
-    <state x="421" y="98" key="FileChooserDialogImpl" timestamp="1615341608513">
+    <state x="421" y="98" key="FileChooserDialogImpl" timestamp="1616633887814">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="98" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1615341608513" />
-    <state width="1237" height="12" key="GridCell.Tab.0.bottom" timestamp="1616566796793">
+    <state x="421" y="98" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1616633887814" />
+    <state width="1237" height="381" key="GridCell.Tab.0.bottom" timestamp="1616723561561">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="12" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1616566796793" />
-    <state width="1237" height="12" key="GridCell.Tab.0.center" timestamp="1616566796793">
+    <state width="1237" height="381" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1616723561561" />
+    <state width="1237" height="381" key="GridCell.Tab.0.center" timestamp="1616723561561">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="12" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1616566796793" />
-    <state width="1237" height="12" key="GridCell.Tab.0.left" timestamp="1616566796793">
+    <state width="1237" height="381" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1616723561561" />
+    <state width="1237" height="381" key="GridCell.Tab.0.left" timestamp="1616723561561">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="12" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1616566796793" />
-    <state width="1237" height="12" key="GridCell.Tab.0.right" timestamp="1616566796793">
+    <state width="1237" height="381" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1616723561561" />
+    <state width="1237" height="381" key="GridCell.Tab.0.right" timestamp="1616723561561">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="12" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1616566796793" />
-    <state width="1237" height="255" key="GridCell.Tab.1.bottom" timestamp="1615189589553">
+    <state width="1237" height="381" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1616723561561" />
+    <state width="1237" height="381" key="GridCell.Tab.1.bottom" timestamp="1616723561561">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="255" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1615189589553" />
-    <state width="1237" height="255" key="GridCell.Tab.1.center" timestamp="1615189589553">
+    <state width="1237" height="381" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1616723561561" />
+    <state width="1237" height="381" key="GridCell.Tab.1.center" timestamp="1616723561561">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="255" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1615189589553" />
-    <state width="1237" height="255" key="GridCell.Tab.1.left" timestamp="1615189589553">
+    <state width="1237" height="381" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1616723561561" />
+    <state width="1237" height="381" key="GridCell.Tab.1.left" timestamp="1616723561561">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="255" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1615189589553" />
-    <state width="1237" height="255" key="GridCell.Tab.1.right" timestamp="1615189589553">
+    <state width="1237" height="381" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1616723561561" />
+    <state width="1237" height="381" key="GridCell.Tab.1.right" timestamp="1616723561561">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="255" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1615189589553" />
-    <state x="56" y="12" key="new project wizard" timestamp="1616566875848">
+    <state width="1237" height="381" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1616723561561" />
+    <state x="221" y="86" key="IDE.errors.dialog" timestamp="1616722549589">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="56" y="12" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1616566875848" />
+    <state x="221" y="86" key="IDE.errors.dialog/0.0.1280.680@0.0.1280.680" timestamp="1616722549589" />
+    <state x="171" y="0" key="Maven.ArtifactSearchDialog" timestamp="1616722904670">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="171" y="0" key="Maven.ArtifactSearchDialog/0.0.1280.680@0.0.1280.680" timestamp="1616722904670" />
+    <state x="56" y="12" key="new project wizard" timestamp="1616718897315">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="56" y="12" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1616718897315" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

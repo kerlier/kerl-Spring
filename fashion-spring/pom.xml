@@ -19,6 +19,7 @@
     <module>nacos-config</module>
     <module>fashion-spring-clickhouse</module>
       <module>fashion-spring-rocketmq</module>
+      <module>fashion-spring-redis</module>
   </modules>
 
   <name>fashion-spring</name>
