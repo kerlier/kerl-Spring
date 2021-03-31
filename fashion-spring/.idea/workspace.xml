@@ -44,19 +44,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9948e2e0-f731-4cc5-9d14-9b7874b3f953" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/fashion-spring-redis/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fashion-spring-redis/src/main/java/com/fashion/spring/redis/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fashion-spring-redis/src/main/java/com/fashion/spring/redis/annotation/RedisLockAnnotation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fashion-spring-redis/src/main/java/com/fashion/spring/redis/aspect/RedisLockAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fashion-spring-redis/src/main/java/com/fashion/spring/redis/controller/RedisController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fashion-spring-redis/src/main/java/com/fashion/spring/redis/enums/RedisLockTypeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fashion-spring-redis/src/main/java/com/fashion/spring/redis/queue/RedisLockDefinitionHolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fashion-spring-redis/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fashion-spring-redis/src/test/java/com/fashion/spring/test/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fashion-spring-clickhouse/src/main/java/com/fashion/clickhouse/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fashion-spring-clickhouse/src/main/java/com/fashion/clickhouse/config/DruidConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fashion-spring-clickhouse/src/main/java/com/fashion/clickhouse/config/JdbcParamConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fashion-spring-clickhouse/src/main/java/com/fashion/clickhouse/controller/UserInfoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fashion-spring-clickhouse/src/main/java/com/fashion/clickhouse/mapper/UserInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fashion-spring-clickhouse/src/main/java/com/fashion/clickhouse/pojo/UserInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fashion-spring-clickhouse/src/main/java/com/fashion/clickhouse/service/UserInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fashion-spring-clickhouse/src/main/java/com/fashion/clickhouse/service/impl/UserInfoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fashion-spring-clickhouse/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fashion-spring-clickhouse/src/main/resources/mapper/UserInfoMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fashion-spring-clickhouse/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-spring-clickhouse/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fashion-spring-redis/src/main/java/com/fashion/spring/redis/aspect/RedisLockAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-spring-redis/src/main/java/com/fashion/spring/redis/aspect/RedisLockAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fashion-spring-redis/src/main/java/com/fashion/spring/redis/controller/RedisController.java" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-spring-redis/src/main/java/com/fashion/spring/redis/controller/RedisController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,20 +74,12 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
-        <option value="Interface" />
         <option value="Enum" />
         <option value="package-info" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>com.pojo.G</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>g</replace>
-    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -133,7 +126,7 @@
       <recent name="E:\git\Spring\fashion-spring\spring-seckill\src\main\java\com\seckill\pojo" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application (2)">
+  <component name="RunManager" selected="Spring Boot.Application (3)">
     <configuration name="AppTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.fashion.spring.test.AppTest" />
       <module name="fashion-spring-redis" />
@@ -197,26 +190,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="fashion-cloud-config" />
+    <configuration name="Application (3)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="fashion-spring-clickhouse" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.fahsion.cloud.config.*" />
+          <option name="PATTERN" value="com.fashion.clickhouse.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fahsion.cloud.config.Application" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fashion.clickhouse.Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.Application (3)" />
         <item itemvalue="Spring Boot.Application (2)" />
         <item itemvalue="Application.AppTest" />
         <item itemvalue="Application.TestReflection" />
         <item itemvalue="Spring Boot.Application (1)" />
-        <item itemvalue="Spring Boot.Application" />
       </list>
     </recent_temporary>
   </component>
@@ -235,7 +228,7 @@
       <workItem from="1615183307598" duration="7035000" />
       <workItem from="1615276227731" duration="6075000" />
       <workItem from="1616566850726" duration="462000" />
-      <workItem from="1616567381791" duration="12403000" />
+      <workItem from="1616567381791" duration="20929000" />
     </task>
     <servers />
   </component>
@@ -270,10 +263,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="121" y="0" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1616723226079" />
-    <state x="446" y="49" key="#com.intellij.ide.util.MemberChooser" timestamp="1616722940441">
+    <state x="446" y="49" key="#com.intellij.ide.util.MemberChooser" timestamp="1617155293969">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="446" y="49" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1616722940441" />
+    <state x="446" y="49" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1617155293969" />
     <state x="371" y="90" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1615877117895">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -282,38 +275,38 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="98" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1616633887814" />
-    <state width="1237" height="381" key="GridCell.Tab.0.bottom" timestamp="1616723561561">
+    <state width="1237" height="140" key="GridCell.Tab.0.bottom" timestamp="1617155896982">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="381" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1616723561561" />
-    <state width="1237" height="381" key="GridCell.Tab.0.center" timestamp="1616723561561">
+    <state width="1237" height="140" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1617155896982" />
+    <state width="1237" height="140" key="GridCell.Tab.0.center" timestamp="1617155896982">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="381" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1616723561561" />
-    <state width="1237" height="381" key="GridCell.Tab.0.left" timestamp="1616723561561">
+    <state width="1237" height="140" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1617155896982" />
+    <state width="1237" height="140" key="GridCell.Tab.0.left" timestamp="1617155896981">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="381" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1616723561561" />
-    <state width="1237" height="381" key="GridCell.Tab.0.right" timestamp="1616723561561">
+    <state width="1237" height="140" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1617155896981" />
+    <state width="1237" height="140" key="GridCell.Tab.0.right" timestamp="1617155896982">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="381" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1616723561561" />
-    <state width="1237" height="381" key="GridCell.Tab.1.bottom" timestamp="1616723561561">
+    <state width="1237" height="140" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1617155896982" />
+    <state width="1237" height="140" key="GridCell.Tab.1.bottom" timestamp="1617155896982">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="381" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1616723561561" />
-    <state width="1237" height="381" key="GridCell.Tab.1.center" timestamp="1616723561561">
+    <state width="1237" height="140" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1617155896982" />
+    <state width="1237" height="140" key="GridCell.Tab.1.center" timestamp="1617155896982">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="381" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1616723561561" />
-    <state width="1237" height="381" key="GridCell.Tab.1.left" timestamp="1616723561561">
+    <state width="1237" height="140" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1617155896982" />
+    <state width="1237" height="140" key="GridCell.Tab.1.left" timestamp="1617155896982">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="381" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1616723561561" />
-    <state width="1237" height="381" key="GridCell.Tab.1.right" timestamp="1616723561561">
+    <state width="1237" height="140" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1617155896982" />
+    <state width="1237" height="140" key="GridCell.Tab.1.right" timestamp="1617155896982">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="381" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1616723561561" />
+    <state width="1237" height="140" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1617155896982" />
     <state x="221" y="86" key="IDE.errors.dialog" timestamp="1616722549589">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

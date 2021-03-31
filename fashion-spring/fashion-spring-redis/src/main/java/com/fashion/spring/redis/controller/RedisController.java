@@ -22,7 +22,6 @@ public class RedisController {
             System.out.println("睡眠执行前");
             Thread.sleep(10000);
             System.out.println("睡眠执行后");
-
         } catch (Exception e) {
             // log error
             System.out.println("controller has error");

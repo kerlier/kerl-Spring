@@ -165,6 +165,4 @@ public class RedisLockAspect{
             }
         }, 0, 2, TimeUnit.SECONDS);
     }
-
-
 }
