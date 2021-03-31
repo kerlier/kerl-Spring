@@ -15,6 +15,7 @@
         <module name="spring-api-swagger" />
         <module name="fashion-spring-clickhouse" />
         <module name="spring-seckill" />
+        <module name="fashion-jwt-token" />
         <module name="basic-spring" />
         <module name="fashion-spring-rocketmq" />
       </profile>
@@ -25,6 +26,7 @@
       <module name="basic-spring" options="-parameters" />
       <module name="basic-spring-mybatis" options="-parameters" />
       <module name="fashion-cloud-config" options="-parameters" />
+      <module name="fashion-jwt-token" options="-parameters" />
       <module name="fashion-spring-clickhouse" options="-parameters" />
       <module name="fashion-spring-redis" options="-parameters" />
       <module name="fashion-spring-rocketmq" options="-parameters" />

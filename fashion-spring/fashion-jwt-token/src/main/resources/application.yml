@@ -1,0 +1,11 @@
+server:
+  port: 7009
+spring:
+  application:
+    name: fashion-jwt-token
+
+config:
+  jwt:
+    secret: iwqjhda8232bjgh432[cicada-smile]
+    expire: 3600
+    header: token
