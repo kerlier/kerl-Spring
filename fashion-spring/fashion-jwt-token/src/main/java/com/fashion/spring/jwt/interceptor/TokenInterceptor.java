@@ -20,7 +20,14 @@ public class TokenInterceptor extends HandlerInterceptorAdapter {
     @Resource
     private JwtConfig jwtConfig;
 
-
+    /**
+     * 拦截器，每次请求之前都会经过拦截器
+     * @param request
+     * @param response
+     * @param handler
+     * @return
+     * @throws Exception
+     */
     @Override
     public boolean preHandle(HttpServletRequest request,
                              HttpServletResponse response,

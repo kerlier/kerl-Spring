@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: sentinel-application
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:8080

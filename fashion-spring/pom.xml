@@ -21,6 +21,7 @@
       <module>fashion-spring-rocketmq</module>
       <module>fashion-spring-redis</module>
     <module>fashion-jwt-token</module>
+    <module>fashion-spring-sentinel</module>
   </modules>
 
   <name>fashion-spring</name>

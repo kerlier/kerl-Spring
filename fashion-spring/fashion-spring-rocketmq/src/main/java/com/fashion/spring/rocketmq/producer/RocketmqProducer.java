@@ -6,13 +6,14 @@ import org.apache.rocketmq.spring.core.RocketMQTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.messaging.support.MessageBuilder;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 /**
  * @Author: yangyuguang
  * @Date: 2021/3/24 14:31
  */
-@Service
+@Component
 public class RocketmqProducer {
 
     @Autowired
@@ -26,7 +27,7 @@ public class RocketmqProducer {
      * @param messageBody
      */
     public void sendMessage(String messageBody){
-        rocketMQTemplate.syncSend("topic", MessageBuilder.withPayload(messageBody));
+        rocketMQTemplate.syncSend("topic", MessageBuilder.withPayload(messageBody).build());
     }
 
     /**
@@ -35,7 +36,7 @@ public class RocketmqProducer {
      * @param messageBody
      */
     public void sendAsyncMessage(String messageBody){
-        rocketMQTemplate.asyncSend("topic", MessageBuilder.withPayload(messageBody), new SendCallback() {
+        rocketMQTemplate.asyncSend("topic", MessageBuilder.withPayload(messageBody).build(), new SendCallback() {
             @Override
             public void onSuccess(SendResult sendResult) {
                 String msgId = sendResult.getMsgId();
@@ -54,7 +55,4 @@ public class RocketmqProducer {
             }
         });
     }
-
-
-
 }

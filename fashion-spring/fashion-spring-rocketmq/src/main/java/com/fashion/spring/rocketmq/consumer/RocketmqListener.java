@@ -16,6 +16,6 @@ public class RocketmqListener implements RocketMQListener<MessageExt> {
     public void onMessage(MessageExt messageExt) {
         byte[] body = messageExt.getBody();
         String message = new String(body);
-        System.out.println("收到消息:"+ message);
+        System.out.println("收到消息:"+ message +", msgId:"+ messageExt.getMsgId());
     }
 }
