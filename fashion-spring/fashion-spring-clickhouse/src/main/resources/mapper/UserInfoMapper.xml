@@ -16,7 +16,7 @@
         INSERT INTO cs_user_info
         (id,user_name,pass_word,phone,email,create_day)
         VALUES
-        (#{id,jdbcType=INTEGER},#{userName,jdbcType=VARCHAR},#{passWord,jdbcType=VARCHAR},
+        (#{id,jdbcType=INTEGER},#{username,jdbcType=VARCHAR},#{password,jdbcType=VARCHAR},
         #{phone,jdbcType=VARCHAR},#{email,jdbcType=VARCHAR},#{createDay,jdbcType=VARCHAR})
     </insert>
     <select id="selectById" parameterType="java.lang.Integer" resultMap="BaseResultMap">

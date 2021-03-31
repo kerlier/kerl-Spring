@@ -6,6 +6,8 @@ import com.fashion.clickhouse.service.UserInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * @Author: yangyuguang
  * @Date: 2021/3/31 9:44
@@ -24,5 +26,10 @@ public class UserInfoServiceImpl implements UserInfoService {
     @Override
     public UserInfo selectById(Integer id) {
         return userInfoMapper.selectById(id);
+    }
+
+    @Override
+    public List<UserInfo> selectList() {
+        return userInfoMapper.selectList();
     }
 }
