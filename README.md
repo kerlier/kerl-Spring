@@ -52,3 +52,23 @@ Method method = ReflectionUtils.findMethod(Input.class, "getName");
 //执行方法
 Object invoke = ReflectionUtils.invokeMethod(method,input);
 ```
+
+
+### 配置Druid
+```
+Druid页面字段解释:
+执行时间分布:
+这8个从左到右依次是：
+0-1ms次数、
+1-10ms次数、
+10-100ms次数、
+100-1000ms次数、
+1-10秒次数、
+10-100秒次数、
+100-1000秒次数、
+大于1000秒次数。
+
+
+执行+RS时分布是将执行时间+ResultSet持有时间合并监控，
+这个能方便诊断返回行数过多的查询。
+```

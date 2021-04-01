@@ -13,6 +13,7 @@
         <module name="basic-spring" />
         <module name="fashion-spring-rocketmq" />
         <module name="spring-mybatis-multi-source" />
+        <module name="fashion-spring-druid" />
         <module name="fashion-cloud-config" />
         <module name="nacos-config" />
         <module name="fashion-spring-redis" />
@@ -29,6 +30,7 @@
       <module name="fashion-cloud-config" options="-parameters" />
       <module name="fashion-jwt-token" options="-parameters" />
       <module name="fashion-spring-clickhouse" options="-parameters" />
+      <module name="fashion-spring-druid" options="-parameters" />
       <module name="fashion-spring-redis" options="-parameters" />
       <module name="fashion-spring-rocketmq" options="-parameters" />
       <module name="fashion-spring-sentinel" options="-parameters" />

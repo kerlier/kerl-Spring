@@ -22,6 +22,7 @@
       <module>fashion-spring-redis</module>
     <module>fashion-jwt-token</module>
     <module>fashion-spring-sentinel</module>
+    <module>fashion-spring-druid</module>
   </modules>
 
   <name>fashion-spring</name>
