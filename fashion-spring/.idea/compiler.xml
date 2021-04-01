@@ -20,6 +20,7 @@
         <module name="fashion-spring-sentinel" />
         <module name="spring-seckill" />
         <module name="fashion-jwt-token" />
+        <module name="fashion-spring-jta" />
       </profile>
     </annotationProcessing>
   </component>
@@ -31,6 +32,7 @@
       <module name="fashion-jwt-token" options="-parameters" />
       <module name="fashion-spring-clickhouse" options="-parameters" />
       <module name="fashion-spring-druid" options="-parameters" />
+      <module name="fashion-spring-jta" options="-parameters" />
       <module name="fashion-spring-redis" options="-parameters" />
       <module name="fashion-spring-rocketmq" options="-parameters" />
       <module name="fashion-spring-sentinel" options="-parameters" />

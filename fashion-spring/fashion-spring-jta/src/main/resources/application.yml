@@ -1,0 +1,16 @@
+spring:
+  jta:
+    transaction-manager-id: jtaManager
+  # 数据源配置
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    data01:
+      driverClassName: com.mysql.cj.jdbc.Driver
+      dbUrl: jdbc:mysql://localhost:3306/test?characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull&tinyInt1isBit=false&serverTimezone=UTC
+      username: root
+      password: root
+    data02:
+      driverClassName: com.mysql.cj.jdbc.Driver
+      dbUrl: jdbc:mysql://localhost:3306/test2?characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull&tinyInt1isBit=false&serverTimezone=UTC
+      username: root
+      password: root

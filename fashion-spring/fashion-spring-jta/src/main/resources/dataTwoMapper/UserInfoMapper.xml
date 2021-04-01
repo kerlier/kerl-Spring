@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fashion.jta.mapper.two.UserInfo02Mapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.fashion.jta.model.UserInfo">
+        <id column="id" property="id" />
+        <result column="username" property="username" />
+        <result column="account" property="account" />
+    </resultMap>
+
+    <update id="transfer">
+        update user_info set account=100 where id = 1
+    </update>
+</mapper>

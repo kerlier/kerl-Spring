@@ -23,6 +23,7 @@
     <module>fashion-jwt-token</module>
     <module>fashion-spring-sentinel</module>
     <module>fashion-spring-druid</module>
+    <module>fashion-spring-jta</module>
   </modules>
 
   <name>fashion-spring</name>
