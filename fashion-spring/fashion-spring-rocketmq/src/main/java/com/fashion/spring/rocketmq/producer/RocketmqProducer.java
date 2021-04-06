@@ -36,7 +36,8 @@ public class RocketmqProducer {
      * @param messageBody
      */
     public void sendAsyncMessage(String messageBody){
-        rocketMQTemplate.asyncSend("topic", MessageBuilder.withPayload(messageBody).build(), new SendCallback() {
+        rocketMQTemplate.asyncSend("topic", MessageBuilder.withPayload(messageBody).build(),
+                new SendCallback() {
             @Override
             public void onSuccess(SendResult sendResult) {
                 String msgId = sendResult.getMsgId();
