@@ -1,25 +1,21 @@
 package com.fashion.spring;
 
 
-import com.google.code.kaptcha.Producer;
 import com.google.code.kaptcha.impl.DefaultKaptcha;
 import com.google.code.kaptcha.util.Config;
-import com.sun.org.apache.xml.internal.security.exceptions.Base64DecodingException;
 import org.junit.Test;
-import sun.tools.jar.Main;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import java.util.Base64;
 import java.util.Properties;
 import java.util.Random;
 
 public class BaseTest  {
 
     @Test
-    public void testImg() throws IOException, Base64DecodingException {
+    public void testImg() throws IOException {
         Properties properties = new Properties();
         properties.setProperty("kaptcha.border","no");
         properties.setProperty("kaptcha.border.color","105,179,90,0");
@@ -38,7 +34,7 @@ public class BaseTest  {
 //        String text = producer.createText();
 //        System.out.println(text);
         //生成图片验证码
-        BufferedImage image = producer.createImage("6666");
+        BufferedImage image = producer.createImage("1239");
         //输出，可以是输出本地，也可以输出网络response.getOutputStream();
         ImageIO.write(image, "jpg", new File("C:\\Users\\kerl\\Desktop\\图片\\a\\code2222.jpg"));
     }

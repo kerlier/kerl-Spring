@@ -39,7 +39,54 @@ nacos:
 server:
   port: 8080
 
-5. 配置nacos
+
+5. 当配置一个配置文件的时候，我们可以使用
+
+   @NacosConfigurationProperties(dataId = "nacos-config",autoRefreshed=true)
+   指定唯一一个dataId
+
+
+   当需要指定多个dataId的时候，我们需要使用
+   @NacosPropertySource(dataId = "nacos-config-2", autoRefreshed = true)
+   如下：
+
+
+    @Component
+    @NacosPropertySource(dataId = "nacos-config",autoRefreshed = true)
+    public class NacosConfig {
+    
+        @NacosValue(value = "${name}", autoRefreshed = true)
+        private String name;
+    
+        public String getName() {
+            return name;
+        }
+    
+        public void setName(String name) {
+            this.name = name;
+        }
+    }
+
+   // 这里的groupId可能没什么用,dataId一样的话，
+   // nacos会读取最新修改的配置文件
+   // 所以在线上使用的时候，dataId尽可能不一样
+
+   @Component
+   @NacosPropertySource(dataId = "nacos-config-2", autoRefreshed = true)
+   public class NacosConfig2 {
+   
+       @NacosValue(value = "${password}", autoRefreshed = true)
+       private String password;
+   
+       public String getPassword() {
+           return password;
+       }
+   
+       public void setPassword(String password) {
+           this.password = password;
+       }
+   }
+6. 配置nacos
 
 ```
 

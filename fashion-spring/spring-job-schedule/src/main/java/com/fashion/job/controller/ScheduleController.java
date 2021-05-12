@@ -5,7 +5,7 @@ import com.fashion.job.WrapperRequest;
 import com.fashion.job.pojo.Person;
 import com.fashion.job.service.FirstService;
 import com.fashion.job.service.SecondService;
-import jdk.nashorn.internal.ir.annotations.Reference;
+import com.fashion.job.service.TimerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,7 +13,10 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.Objects;
 import java.util.concurrent.LinkedBlockingDeque;
 
 @RestController
@@ -31,12 +34,21 @@ public class ScheduleController {
     @Autowired
     private SecondService secondService;
 
+    @Autowired
+    private TimerService timerService;
+
     @PostMapping("/getId/{id}")
     public  String queryName(@PathVariable("id") String id) throws Exception{
         WrapperRequest<String, String> request = new WrapperRequest<>();
         request.setRequest(id);
         queryNameQueue.add(request);
         return request.getFuture().get();
+    }
+
+    @PostMapping("/putId/{id}")
+    public String putUid(@PathVariable("id") String id){
+        timerService.putUid(id);
+        return "success";
     }
 
     @GetMapping("/get")

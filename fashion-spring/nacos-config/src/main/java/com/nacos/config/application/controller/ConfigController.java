@@ -1,6 +1,9 @@
 package com.nacos.config.application.controller;
 
-import com.alibaba.nacos.api.config.annotation.NacosValue;
+import com.nacos.config.application.config.NacosConfig;
+import com.nacos.config.application.config.NacosConfig2;
+import com.nacos.config.application.config.NacosConfig3;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -11,11 +14,30 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ConfigController {
 
-    @NacosValue(value = "${name:1}",autoRefreshed = true)
-    private String info;
+//    @NacosValue(value = "${name:1}",autoRefreshed = true)
+//    private String info;
+    @Autowired
+    private NacosConfig nacosConfig;
 
-    @GetMapping("/info")
-    public String getInfo(){
-        return info;
+    @Autowired
+    private NacosConfig2 nacosConfig2;
+
+    @Autowired
+    private NacosConfig3 nacosConfig3;
+
+
+    @GetMapping("/name")
+    public String getName(){
+        return nacosConfig.getName();
+    }
+
+    @GetMapping("/password")
+    public String getPassword(){
+        return nacosConfig2.getPassword();
+    }
+
+    @GetMapping("/name1")
+    public String getName1(){
+        return nacosConfig3.getName();
     }
 }
