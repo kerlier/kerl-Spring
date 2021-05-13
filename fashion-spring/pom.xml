@@ -24,6 +24,10 @@
     <module>fashion-spring-sentinel</module>
     <module>fashion-spring-druid</module>
     <module>fashion-spring-jta</module>
+      <module>fashion-nacos-register</module>
+    <module>fashion-nacos-register-api</module>
+    <module>fashion-nacos-register-provider</module>
+    <module>fashion-nacos-register-consumer</module>
   </modules>
 
   <name>fashion-spring</name>

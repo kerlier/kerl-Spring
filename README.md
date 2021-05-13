@@ -1,4 +1,47 @@
 # Spring
+### Spring-Cloud-Config
+#### SpringCloud使用SpringCloudConfig作为配置中心
+```
+1. 加入maven依赖
+ <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-config-server</artifactId>
+ </dependency>
+
+2. application配置文件
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/kerlier/fashion-cloud-config.git
+          username: kerlier  # 用户名
+          password: yang199626  # 密码
+      label: dev  # label表示分支
+  application:
+    name: config   # name必须要有
+
+
+
+
+3. Application类
+@EnableConfigServer
+@SpringBootApplication
+public class Application {
+    public static void main(String[] args) {
+        SpringApplication.run(Application.class, args);
+    }
+}
+
+4. 使用
+@Value("${info}")
+private String version;
+
+
+```
+
+
 
 ### Nacos
 #### SpringBoot以nacos为配置中心
@@ -120,3 +163,58 @@ Druid页面字段解释:
 这个能方便诊断返回行数过多的查询。
 
 ```
+
+### Nacos作为注册中心
+
+1. 引入maven依赖
+```
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.dubbo</groupId>
+            <artifactId>dubbo-registry-nacos</artifactId>
+            <version>2.7.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.dubbo</groupId>
+            <artifactId>dubbo-spring-boot-starter</artifactId>
+            <version>2.7.5</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.nacos</groupId>
+            <artifactId>nacos-client</artifactId>
+            <version>1.1.3</version>
+        </dependency>
+```
+
+2. 修改配置文件
+```
+spring:
+  application:
+    name: register-consumer
+dubbo:
+  application:
+    name: register-consumer # 指定dubbo的applicationName
+  registry:
+    timeout: 6000  # 指定调用的超时时间
+    address: nacos://127.0.0.1:8848 # nacos的地址
+    check: false # 启动时是否检查有提供者
+    parameters:  # 这里可以指定不同的namespace,以便于区分不同的环境
+      namespace: f809bd6f-e655-4943-b842-4b1b8e0c5157
+server:
+  port: 8081
+```
+
+3. Application类
+```
+@SpringBootApplication
+@EnableDubbo   # 需要添加@EnableDubbo关键字
+public class Application {
+    public static void main(String[] args) {
+        SpringApplication.run(Application.class,args);
+    }
+}
+```
+4. 其他调用跟dubbo使用无异

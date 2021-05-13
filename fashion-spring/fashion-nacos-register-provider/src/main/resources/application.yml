@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: register-provider
+
+dubbo:
+  application:
+    name: register-provider
+  registry:
+    address: nacos://127.0.0.1:8848
+    check: false
+    parameters:
+      namespace: f809bd6f-e655-4943-b842-4b1b8e0c5157

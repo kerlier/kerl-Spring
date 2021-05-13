@@ -3,10 +3,10 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/kerlier/fashion-cloud-config.git
-          username: kerlier
+          uri: https://gitee.com/yangyuguang-kerl/config.git
+          username: yangyuguang-kerl
           password: yang199626
-      label: dev
+      label: master
   application:
     name: config
 management:

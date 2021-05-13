@@ -8,15 +8,19 @@
         <outputRelativeToContentRoot value="true" />
         <module name="basic-spring-mybatis" />
         <module name="spring-job-schedule" />
+        <module name="fashion-nacos-register" />
         <module name="spring-api-swagger" />
         <module name="fashion-spring-clickhouse" />
+        <module name="fashion-nacos-register-provider" />
         <module name="basic-spring" />
         <module name="fashion-spring-rocketmq" />
         <module name="spring-mybatis-multi-source" />
         <module name="fashion-spring-druid" />
+        <module name="fashion-nacos-register-api" />
         <module name="fashion-cloud-config" />
         <module name="nacos-config" />
         <module name="fashion-spring-redis" />
+        <module name="fashion-nacos-register-consumer" />
         <module name="fashion-spring-sentinel" />
         <module name="spring-seckill" />
         <module name="fashion-jwt-token" />
@@ -30,6 +34,10 @@
       <module name="basic-spring-mybatis" options="-parameters" />
       <module name="fashion-cloud-config" options="-parameters" />
       <module name="fashion-jwt-token" options="-parameters" />
+      <module name="fashion-nacos-register" options="-parameters" />
+      <module name="fashion-nacos-register-api" options="-parameters" />
+      <module name="fashion-nacos-register-consumer" options="-parameters" />
+      <module name="fashion-nacos-register-provider" options="-parameters" />
       <module name="fashion-spring-clickhouse" options="-parameters" />
       <module name="fashion-spring-druid" options="-parameters" />
       <module name="fashion-spring-jta" options="-parameters" />

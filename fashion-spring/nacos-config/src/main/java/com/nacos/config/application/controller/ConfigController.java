@@ -25,6 +25,9 @@ public class ConfigController {
     @Autowired
     private NacosConfig3 nacosConfig3;
 
+//    @NacosValue("${password}")
+//    private String password;
+
 
     @GetMapping("/name")
     public String getName(){
