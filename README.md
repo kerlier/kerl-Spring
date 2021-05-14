@@ -273,3 +273,143 @@ spring:
 ![设置流控](fashion-spring/image/lALPDgtYw9gRYv7NAmbNBEU_1093_614.png)
 
 当流量超过设置值时，会直接报错，报错信息时SentinelExceptionHandler中的设置的值。
+
+
+
+### Mybatis-plus使用
+
+##### 1. 引入Maven依赖
+```
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <!-- mybatis plus 代码生成器 -->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>3.2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-generator</artifactId>
+            <version>3.2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.freemarker</groupId>
+            <artifactId>freemarker</artifactId>
+            <version>2.3.28</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.47</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>3.5.2</version>
+        </dependency>
+```
+
+##### 2. 自动生成代码
+```
+    public static void main(String[] args) {
+        // 代码生成器
+        AutoGenerator mpg = new AutoGenerator();
+
+        // 全局配置
+        GlobalConfig gc = new GlobalConfig();
+        String projectPath = System.getProperty("user.dir");
+        gc.setOutputDir(projectPath + "/src/main/java");
+        gc.setAuthor("test");
+        gc.setOpen(false);
+        //实体属性 Swagger2 注解
+        gc.setSwagger2(false);
+        mpg.setGlobalConfig(gc);
+
+        // 数据源配置
+        DataSourceConfig dsc = new DataSourceConfig();
+        dsc.setUrl("jdbc:mysql://127.0.0.1:3306/test?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true");
+        dsc.setDriverName("com.mysql.cj.jdbc.Driver");
+        dsc.setUsername("root");
+        dsc.setPassword("root");
+        mpg.setDataSource(dsc);
+
+        // 包配置
+        PackageConfig pc = new PackageConfig();
+        pc.setParent("com.example");
+        pc.setEntity("model.auto");
+        pc.setMapper("mapper.auto");
+        pc.setService("service");
+        pc.setServiceImpl("service.impl");
+        mpg.setPackageInfo(pc);
+
+        // 配置模板
+        TemplateConfig templateConfig = new TemplateConfig();
+
+        templateConfig.setXml(null);
+        mpg.setTemplate(templateConfig);
+
+        // 策略配置
+        StrategyConfig strategy = new StrategyConfig();
+        strategy.setNaming(NamingStrategy.underline_to_camel);
+        strategy.setColumnNaming(NamingStrategy.underline_to_camel);
+        strategy.setSuperEntityClass("com.baomidou.mybatisplus.extension.activerecord.Model");
+        strategy.setEntityLombokModel(true);
+        strategy.setRestControllerStyle(true);
+
+        strategy.setEntityLombokModel(true);
+        strategy.setInclude(scanner("表名，多个英文逗号分割").split(","));
+        strategy.setControllerMappingHyphenStyle(true);
+        strategy.setTablePrefix(pc.getModuleName() + "_");
+        mpg.setStrategy(strategy);
+        mpg.setTemplateEngine(new FreemarkerTemplateEngine());
+        mpg.execute();
+    }
+
+    public static String scanner(String tip) {
+        Scanner scanner = new Scanner(System.in);
+        StringBuilder help = new StringBuilder();
+        help.append("请输入" + tip + "：");
+        System.out.println(help.toString());
+        if (scanner.hasNext()) {
+            String ipt = scanner.next();
+            if (StringUtils.isNotEmpty(ipt)) {
+                return ipt;
+            }
+        }
+        throw new MybatisPlusException("请输入正确的" + tip + "！");
+    }
+```
+##### 3. 使用
+```
+    1. 查询
+    @Autowired
+    private UserInfoMapper userInfoMapper;
+
+    @Override
+    public UserInfo getById(Integer userId) {
+        return userInfoMapper.selectById(userId);
+    }
+
+    2. 条件查询
+    @Override
+    public UserInfo getByUsername(String search){
+        QueryWrapper<UserInfo> wrapper = new QueryWrapper<>();
+        wrapper.like("username",search);
+        List<UserInfo> userInfos = userInfoMapper.selectList(wrapper);
+        if(!userInfos.isEmpty()){
+            return userInfos.get(0);
+        }
+        return null;
+    }
+    注：MybatisPlus中的条件查询一般会使用QueryWrapper
+    这个对象会满足我们大部分的需求
+```

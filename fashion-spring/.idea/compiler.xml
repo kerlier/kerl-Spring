@@ -22,6 +22,7 @@
         <module name="fashion-spring-redis" />
         <module name="fashion-nacos-register-consumer" />
         <module name="fashion-spring-sentinel" />
+        <module name="fashion-spring-mybatis-plus" />
         <module name="spring-seckill" />
         <module name="fashion-jwt-token" />
         <module name="fashion-spring-jta" />
@@ -41,6 +42,7 @@
       <module name="fashion-spring-clickhouse" options="-parameters" />
       <module name="fashion-spring-druid" options="-parameters" />
       <module name="fashion-spring-jta" options="-parameters" />
+      <module name="fashion-spring-mybatis-plus" options="-parameters" />
       <module name="fashion-spring-redis" options="-parameters" />
       <module name="fashion-spring-rocketmq" options="-parameters" />
       <module name="fashion-spring-sentinel" options="-parameters" />

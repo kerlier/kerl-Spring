@@ -28,6 +28,7 @@
     <module>fashion-nacos-register-api</module>
     <module>fashion-nacos-register-provider</module>
     <module>fashion-nacos-register-consumer</module>
+      <module>fashion-spring-mybatis-plus</module>
   </modules>
 
   <name>fashion-spring</name>
