@@ -44,22 +44,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9948e2e0-f731-4cc5-9d14-9b7874b3f953" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/fashion-spring-mybatis-plus/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fashion-spring-mybatis-plus/src/main/java/com/fashion/spring/mybatisplus/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fashion-spring-mybatis-plus/src/main/java/com/fashion/spring/mybatisplus/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fashion-spring-mybatis-plus/src/main/java/com/fashion/spring/mybatisplus/dto/UserInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fashion-spring-mybatis-plus/src/main/java/com/fashion/spring/mybatisplus/generate/MybatisPlusGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fashion-spring-mybatis-plus/src/main/java/com/fashion/spring/mybatisplus/mapper/UserInfoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fashion-spring-mybatis-plus/src/main/java/com/fashion/spring/mybatisplus/service/IUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fashion-spring-mybatis-plus/src/main/java/com/fashion/spring/mybatisplus/service/impl/IUserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fashion/spring/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/fashion/spring/AppTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-logs/tmlog.lck" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-spring-mybatis-plus/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -250,7 +236,7 @@
       <workItem from="1620780230169" duration="11411000" />
       <workItem from="1620801208386" duration="2398000" />
       <workItem from="1620866082408" duration="243000" />
-      <workItem from="1620866334369" duration="14314000" />
+      <workItem from="1620866334369" duration="15131000" />
     </task>
     <servers />
   </component>

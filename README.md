@@ -413,3 +413,50 @@ spring:
     注：MybatisPlus中的条件查询一般会使用QueryWrapper
     这个对象会满足我们大部分的需求
 ```
+##### 4. 常用的MybatisPlus拦截器
+```
+    @Bean
+    public PaginationInterceptor paginationInterceptor() {
+        return new PaginationInterceptor();
+    }
+```
+
+##### 5. 自定义使用InnerInterceptor
+MybatisPlus的拦截器需要继承InnerInterceptor
+Mybatis的拦截器需要继承Interceptor
+```
+1. 实现InnerInterceptor
+public class DataPermissionInnerInterceptor implements InnerInterceptor {
+    @Override
+    public void beforeQuery(Executor executor, MappedStatement ms, Object parameter, RowBounds rowBounds, ResultHandler resultHandler, BoundSql boundSql) {
+        try {
+            // id为执行的mapper方法的全路径名，如com.cq.UserMapper.insertUser， 便于后续使用反射
+            String id = ms.getId();
+            // sql语句类型 select、delete、insert、update
+            String sqlCommandType = ms.getSqlCommandType().toString();
+
+            // 获取到原始sql语句
+            String sql = boundSql.getSql().toLowerCase();
+            log.info("SQL：{}", sql);
+            // 增强sql
+            // 通过反射，拦截方法上带有自定义@DataPermission注解的方法，并增强sql
+            String mSql = sqlAnnotationEnhance(id, sqlCommandType, sql);
+            PluginUtils.MPBoundSql mpBs = PluginUtils.mpBoundSql(boundSql);
+            mpBs.sql(mSql);
+            log.info("增强后的SQL：{}", mSql);
+        } catch (ClassNotFoundException e) {
+            log.error("数据权限拦截器异常，{}", Throwables.getStackTraceAsString(e));
+        }
+    }
+}
+2. 注册拦截器,需要在Mybatis的拦截器基础上新增
+    @Bean
+    public MybatisPlusInterceptor dataPermissionInterceptor() {
+        MybatisPlusInterceptor interceptor = new MybatisPlusInterceptor();
+        DataPermissionInnerInterceptor dataPermissionInterceptor = new DataPermissionInnerInterceptor();
+        interceptor.addInnerInterceptor(dataPermissionInterceptor);
+        return interceptor;
+    }
+```
+
+
