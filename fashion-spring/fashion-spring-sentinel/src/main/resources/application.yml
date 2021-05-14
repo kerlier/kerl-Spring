@@ -1,7 +1,10 @@
 spring:
-  application:
-    name: sentinel-application
   cloud:
     sentinel:
       transport:
-        dashboard: localhost:8080
+        dashboard: localhost:8082
+        port: 8179
+  application:
+    name: sentinel-application
+server:
+  port: 8083

@@ -218,3 +218,58 @@ public class Application {
 }
 ```
 4. 其他调用跟dubbo使用无异
+
+
+
+### 使用Sentinel
+#####  1. 引入Maven依赖
+```
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
+        </dependency>
+```
+##### 2.  修改application.yml
+```
+spring:
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:8082
+        port: 8179
+```
+##### 3.  代码使用
+```
+可以定义一个SentinelExceptionHandler
+代码如下：
+    public static String blockExceptionHandler( BlockException e) {
+        // 不同的异常返回不同的提示语
+        if (e instanceof FlowException) {
+            return "请求过于频繁，请控制频率";
+        } else if (e instanceof DegradeException) {
+            return "服务熔断降级了";
+        } else if (e instanceof ParamFlowException) {
+            return "热点参数限流了";
+        } else if (e instanceof SystemBlockException) {
+            return "触发系统保护规则";
+        } else if (e instanceof AuthorityException) {
+            return "触发系统保护规则";
+        }
+        return "sentinel异常";
+    }
+
+
+真正使用地方：
+    @GetMapping("/hello")
+    @SentinelResource(value = "hotkey",
+            blockHandlerClass = SentinelExceptionHandler.class,
+            blockHandler="blockExceptionHandler")
+    public String hello(){
+        return "hello";
+    }
+```
+##### 4. 定义规则
+![资源展示](fashion-spring/image/lALPDh0cPQ_uRfnNApbNB2I_1890_662.png)
+![设置流控](fashion-spring/image/lALPDgtYw9gRYv7NAmbNBEU_1093_614.png)
+
+当流量超过设置值时，会直接报错，报错信息时SentinelExceptionHandler中的设置的值。
