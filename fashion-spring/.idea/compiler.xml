@@ -17,6 +17,7 @@
         <module name="spring-mybatis-multi-source" />
         <module name="fashion-spring-druid" />
         <module name="fashion-nacos-register-api" />
+        <module name="fahion-spring-flowable" />
         <module name="fashion-cloud-config" />
         <module name="nacos-config" />
         <module name="fashion-spring-redis" />
@@ -33,6 +34,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="basic-spring" options="-parameters" />
       <module name="basic-spring-mybatis" options="-parameters" />
+      <module name="fahion-spring-flowable" options="-parameters" />
       <module name="fashion-cloud-config" options="-parameters" />
       <module name="fashion-jwt-token" options="-parameters" />
       <module name="fashion-nacos-register" options="-parameters" />

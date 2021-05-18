@@ -29,6 +29,7 @@
     <module>fashion-nacos-register-provider</module>
     <module>fashion-nacos-register-consumer</module>
       <module>fashion-spring-mybatis-plus</module>
+      <module>fahion-spring-flowable</module>
   </modules>
 
   <name>fashion-spring</name>

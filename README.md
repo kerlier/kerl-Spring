@@ -459,4 +459,83 @@ public class DataPermissionInnerInterceptor implements InnerInterceptor {
     }
 ```
 
+### Redis
+##### Redis集群
+
+
+### Flowable
+##### 读懂Flowable配置文件
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+             xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+             xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC"
+             xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI"
+             xmlns:flowable="http://flowable.org/bpmn"
+             typeLanguage="http://www.w3.org/2001/XMLSchema"
+             expressionLanguage="http://www.w3.org/1999/XPath"
+             targetNamespace="http://www.flowable.org/processdef">
+
+    <process id="holidayRequest" name="Holiday Request" isExecutable="true">
+
+        <startEvent id="startEvent"/>
+        <sequenceFlow sourceRef="startEvent" targetRef="approveTask"/>
+
+        <userTask id="approveTask" name="Approve or reject request" flowable:candidateGroups="managers"/>
+        <sequenceFlow sourceRef="approveTask" targetRef="decision"/>
+
+        <exclusiveGateway id="decision"/>
+        <sequenceFlow sourceRef="decision" targetRef="externalSystemCall">
+            <conditionExpression xsi:type="tFormalExpression">
+                <![CDATA[
+          ${approved}
+        ]]>
+            </conditionExpression>
+        </sequenceFlow>
+        <sequenceFlow  sourceRef="decision" targetRef="sendRejectionMail">
+            <conditionExpression xsi:type="tFormalExpression">
+                <![CDATA[
+          ${!approved}
+        ]]>
+            </conditionExpression>
+        </sequenceFlow>
+
+        <serviceTask id="externalSystemCall" name="Enter holidays in external system"
+                     flowable:class="org.flowable.CallExternalSystemDelegate"/>
+        <sequenceFlow sourceRef="externalSystemCall" targetRef="holidayApprovedTask"/>
+
+        <userTask id="holidayApprovedTask" name="Holiday approved" flowable:assignee="${employee}"/>
+        <sequenceFlow sourceRef="holidayApprovedTask" targetRef="approveEnd"/>
+
+        <serviceTask id="sendRejectionMail" name="Send out rejection email"
+                     flowable:class="org.flowable.SendRejectionMail"/>
+        <sequenceFlow sourceRef="sendRejectionMail" targetRef="rejectEnd"/>
+
+        <endEvent id="approveEnd"/>
+
+        <endEvent id="rejectEnd"/>
+
+    </process>
+</definitions>
+```
+上面的配置文件看起来特别复杂，但是对照着流程图我们才能看到对应的效果
+![flowable流程图](./fashion-spring/image/getting.started.bpmn.process.png)
+
+其中sourceRef以及targetRef对应着箭头的两端，
+  sourceRef是箭头的出发端 targetRef指的是箭头的目的端
+
+流程图中的圆圈对应着配置文件中的Event标签.
+
+流程图中的带头像方框对应着配置文件中的userTask.
+
+流程图中的带设置方框对应着配置文件中的serviceTask,可以指定class类.
+
+带叉的表示路由网关：关键词对应exclusiveGateway.
+
+流程图中的箭头对应的是sequenceFlow,可以加判断条件.
+
+
+
 
