@@ -10,7 +10,8 @@
                   flowable:assignee="${userId}"></userTask>
 
         <exclusiveGateway id="decision"></exclusiveGateway>
-        <sequenceFlow id="sequenceFlow-90e6eadb-3a9e-4955-bad4-ec337a360fac" sourceRef="decision" targetRef="false">
+        <sequenceFlow id="sequenceFlow-90e6eadb-3a9e-4955-bad4-ec337a360fac" sourceRef="decision"
+                      targetRef="false">
             <conditionExpression xsi:type="tFormalExpression"><![CDATA[${!approved}]]></conditionExpression>
         </sequenceFlow>
         <serviceTask id="success" name="success"

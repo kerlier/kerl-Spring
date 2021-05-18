@@ -4,7 +4,9 @@ package com.fashion.flowable.dto;
  * @Author: Kerl
  * @Date: 2021/5/18 9:55
  */
-public class Response {
+public class Response<T> {
+
+    private T result;
 
     private Integer code;
 
@@ -27,9 +29,24 @@ public class Response {
         this.message = message;
     }
 
+    public T getResult() {
+        return result;
+    }
+
+    public void setResult(T result) {
+        this.result = result;
+    }
+
     public static Response ok(){
         Response response = new Response();
         response.setCode(200);
+        return response;
+    }
+
+    public static <T> Response ok(T result){
+        Response response = new Response();
+        response.setCode(200);
+        response.setResult(result);
         return response;
     }
 }
