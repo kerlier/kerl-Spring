@@ -57,9 +57,6 @@ public class FlowableController {
                 .taskAssignee(userId)
                 .orderByTaskCreateTime().desc()
                 .list();
-        for (Task task : list) {
-            System.out.println(task.toString());
-        }
-        return Response.ok();
+        return Response.ok(list.toString());
     }
 }

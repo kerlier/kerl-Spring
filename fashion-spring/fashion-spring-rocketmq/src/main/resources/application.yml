@@ -3,3 +3,5 @@ rocketmq:
   producer:
     group: rocketmq_test #自定义的组名称
     send-message-timeout: 3000  #消息发送超时时长
+server:
+  port: 9091

@@ -1,0 +1,19 @@
+spring:
+  cloud:
+    nacos:
+      config:
+        context-path: /nacos
+        namespace: 9f7ad9ce-0c95-43d4-9f34-818bf2b545cc
+        group: xfd
+        server-addr: 192.168.1.200:2080
+        file-extension: yml
+        extension-configs:
+          - data-id: authInfo.yml
+            group: xfd
+            refresh: true
+          - data-id: rule.yml
+            group: xfd
+            refresh: true
+          - data-id: security.yml
+            group: xfd
+            refresh: true

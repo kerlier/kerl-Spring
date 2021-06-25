@@ -12,24 +12,26 @@
     <module>basic-spring</module>
     <module>basic-spring-mybatis</module>
     <module>spring-mybatis-multi-source</module>
-      <module>spring-api-swagger</module>
-      <module>spring-job-schedule</module>
-      <module>spring-seckill</module>
+    <module>spring-api-swagger</module>
+    <module>spring-job-schedule</module>
+    <module>spring-seckill</module>
     <module>fashion-cloud-config</module>
     <module>nacos-config</module>
     <module>fashion-spring-clickhouse</module>
-      <module>fashion-spring-rocketmq</module>
-      <module>fashion-spring-redis</module>
+    <module>fashion-spring-rocketmq</module>
+    <module>fashion-spring-redis</module>
     <module>fashion-jwt-token</module>
     <module>fashion-spring-sentinel</module>
     <module>fashion-spring-druid</module>
     <module>fashion-spring-jta</module>
-      <module>fashion-nacos-register</module>
+    <module>fashion-nacos-register</module>
     <module>fashion-nacos-register-api</module>
     <module>fashion-nacos-register-provider</module>
     <module>fashion-nacos-register-consumer</module>
-      <module>fashion-spring-mybatis-plus</module>
-      <module>fahion-spring-flowable</module>
+    <module>fashion-spring-mybatis-plus</module>
+    <module>fahion-spring-flowable</module>
+    <module>fashion-spring-yml</module>
+      <module>fashion-spring-xxl-job</module>
   </modules>
 
   <name>fashion-spring</name>
@@ -46,55 +48,55 @@
     <artifactId>spring-boot-starter-parent</artifactId>
     <version>2.0.8.RELEASE</version>
   </parent>
+
+
   <dependencyManagement>
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.12</version>
-      <scope>test</scope>
-    </dependency>
-    <!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
-    <dependency>
-      <groupId>org.mybatis</groupId>
-      <artifactId>mybatis</artifactId>
-      <version>3.4.6</version>
-    </dependency>
+        <dependencies>
+          <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+          </dependency>
+          <!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
+          <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>3.4.6</version>
+          </dependency>
 
-    <dependency>
-      <groupId>mysql</groupId>
-      <artifactId>mysql-connector-java</artifactId>
-      <version>8.0.11</version>
-    </dependency>
+          <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.11</version>
+          </dependency>
 
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-test</artifactId>
-      <version>5.1.0.RELEASE</version>
-    </dependency>
+          <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>5.1.0.RELEASE</version>
+          </dependency>
 
-    <dependency>
-      <groupId>org.mybatis.spring.boot</groupId>
-      <artifactId>mybatis-spring-boot-starter</artifactId>
-      <version>1.3.2</version>
-    </dependency>
+          <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>1.3.2</version>
+          </dependency>
 
-    <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
-    <dependency>
-      <groupId>mysql</groupId>
-      <artifactId>mysql-connector-java</artifactId>
-      <version>6.0.5</version>
-    </dependency>
-
-      <dependency>
-        <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-dependencies</artifactId>
-        <version>${spring-cloud.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-  </dependencies>
-
+          <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+          <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>6.0.5</version>
+          </dependency>
+          <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-dependencies</artifactId>
+            <version>${spring-cloud.version}</version>
+            <type>pom</type>
+            <scope>import</scope>
+          </dependency>
+        </dependencies>
   </dependencyManagement>
 
 </project>

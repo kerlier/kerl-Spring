@@ -2,12 +2,15 @@ package com.fashion.spring.rocketmq.producer;
 
 import org.apache.rocketmq.client.producer.SendCallback;
 import org.apache.rocketmq.client.producer.SendResult;
+import org.apache.rocketmq.common.message.MessageConst;
 import org.apache.rocketmq.spring.core.RocketMQTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.messaging.Message;
 import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
+
+import java.util.UUID;
 
 /**
  * @Author: yangyuguang
@@ -21,13 +24,21 @@ public class RocketmqProducer {
 
     @Value("${rocketmq.producer.send-message-timeout}")
     private Integer timeout;
-
+    static Message<String> build ;
+    static String hashKey;
+    static {
+        build = MessageBuilder.withPayload("测试")
+                .setHeader(MessageConst.PROPERTY_KEYS,"123").build();
+        hashKey = UUID.randomUUID().toString();
+    }
     /**
      * 发送普通消息
      * @param messageBody
      */
     public void sendMessage(String messageBody){
-        rocketMQTemplate.syncSend("topic", MessageBuilder.withPayload(messageBody).build());
+        System.out.println(hashKey);//ca311a47-42e1-4fff-b7fe-f33f15ca1ed1
+        System.out.println(build.toString());
+        rocketMQTemplate.sendOneWayOrderly("topic", build,hashKey);
     }
 
     /**
