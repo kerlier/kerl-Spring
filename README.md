@@ -607,6 +607,35 @@ public class MyOwnListener implements ApplicationListener {
         System.out.println(test);
     }
 ```
+### 监听文件变化
+```
+ executor=new ScheduledThreadPoolExecutor(1);
+        executor.scheduleWithFixedDelay(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("执行1");
+                System.out.println("lastModified:" + lastModified);
+                synchronized (this){
+                    if(stopped){
+                        return ;
+                    }
+                    boolean reload = false;
+                    File file = new File(filePath);
+                    if(!Objects.equals(lastModified,file.lastModified())){
+                        System.out.println("执行2");
+                        reload = true;
+                        lastModified = file.lastModified();
+                    }
+
+                    if(reload){
+                        System.out.println("执行3");
+                        print(file);
+                    }
+                }
+            }
+        },5 * 1000L,5 * 1000L, TimeUnit.MILLISECONDS);
+
+```
 
 
 
