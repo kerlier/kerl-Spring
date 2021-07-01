@@ -584,4 +584,29 @@ public class MyOwnListener implements ApplicationListener {
 }
 ```
 
+### Callable(Java自带的Callable)
+简单来说，就是同一个方法,可以执行不同逻辑。
+```
+ public static String stringBlankThenExecute(String source, Callable<String> callable){
+        if(Objects.isNull(source)||source.isEmpty()){
+            try{
+                return callable.call();
+            }catch (Exception e){
+                e.printStackTrace();
+                System.out.println("string empty and then execute cause an exception");
+            }
+        }
+        return source;
+    }
+
+    public static void main(String[] args) {
+        //这里可以执行不同的逻辑
+        String test = stringBlankThenExecute("", () -> {
+            return "为空的时候返回";
+        });
+        System.out.println(test);
+    }
+```
+
+
 
