@@ -3,6 +3,7 @@ package com.spring.xxl.job.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.Trigger;
 import org.springframework.scheduling.TriggerContext;
+import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler;
 import org.springframework.scheduling.support.CronTrigger;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -26,6 +27,9 @@ public class ScheduleController {
     private Long nowTimeStamp = new Date().getTime();
 
     private static final String DEFAULT_CRON = "0/5 * * * * ?";
+
+    @Autowired
+    private ThreadPoolTaskExecutor taskExecutor;
 
     @PostConstruct
     public void init(){

@@ -17,6 +17,7 @@
     <file url="file://$PROJECT_DIR$/fashion-spring-clickhouse/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/fashion-spring-druid/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/fashion-spring-jta/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fashion-spring-listener/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/fashion-spring-mybatis-plus/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/fashion-spring-redis/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/fashion-spring-rocketmq/src/main/java" charset="UTF-8" />

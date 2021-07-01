@@ -1,2 +1,8 @@
 server:
   port: 9090
+task:
+  pool:
+    corePoolSize: 5
+    maxPoolSize: 5
+    keepAliveSeconds: 300
+    queueCapacity: 1000

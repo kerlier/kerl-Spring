@@ -19,6 +19,7 @@
         <module name="fashion-spring-druid" />
         <module name="fashion-nacos-register-api" />
         <module name="fahion-spring-flowable" />
+        <module name="fashion-spring-listener" />
         <module name="fashion-cloud-config" />
         <module name="nacos-config" />
         <module name="fashion-spring-redis" />
@@ -47,6 +48,7 @@
       <module name="fashion-spring-clickhouse" options="-parameters" />
       <module name="fashion-spring-druid" options="-parameters" />
       <module name="fashion-spring-jta" options="-parameters" />
+      <module name="fashion-spring-listener" options="-parameters" />
       <module name="fashion-spring-mybatis-plus" options="-parameters" />
       <module name="fashion-spring-redis" options="-parameters" />
       <module name="fashion-spring-rocketmq" options="-parameters" />

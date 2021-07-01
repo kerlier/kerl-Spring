@@ -32,6 +32,7 @@
     <module>fahion-spring-flowable</module>
     <module>fashion-spring-yml</module>
       <module>fashion-spring-xxl-job</module>
+      <module>fashion-spring-listener</module>
   </modules>
 
   <name>fashion-spring</name>

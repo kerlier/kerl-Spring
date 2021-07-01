@@ -536,6 +536,52 @@ public class DataPermissionInnerInterceptor implements InnerInterceptor {
 
 流程图中的箭头对应的是sequenceFlow,可以加判断条件.
 
+### AppcationListener
+##### 1. 定义Event事件(需继承ApplicationEvent)
+```
+public class FashionEvent extends ApplicationEvent {
+    public FashionEvent(ConfigDTO source) {
+        super(source);
+    }
 
+    @Override
+    public ConfigDTO getSource(){
+        return (ConfigDTO) super.getSource();
+    }
+}
+```
+##### 2. 先定义发布者publisher(需实现ApplicationEventPublisher)
+```
+实现两个方法：
+@Component
+public class MyOwnPublisher implements ApplicationEventPublisher {
+
+    @Autowired
+    private ApplicationContext applicationContext;
+
+    @Override
+    public void publishEvent(ApplicationEvent event) {
+        applicationContext.publishEvent(event);
+    }
+
+    @Override
+    public void publishEvent(Object o) {
+        applicationContext.publishEvent(o);
+    }
+}
+```
+
+##### 3.定义监听者(需实现ApplicationListener)
+```
+@Component
+public class MyOwnListener implements ApplicationListener {
+
+    @Override
+    public void onApplicationEvent(ApplicationEvent fashionEvent) {
+        FashionEvent event = (FashionEvent) fashionEvent;
+        System.out.println("获取event:"+ JSONObject.toJSONString(event.getSource()));
+    }
+}
+```
 
 
