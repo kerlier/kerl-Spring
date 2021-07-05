@@ -14,7 +14,6 @@
     <file url="file://$PROJECT_DIR$/fashion-nacos-register-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/fashion-nacos-register-consumer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/fashion-nacos-register-provider/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/fashion-nacos-register/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/fashion-spring-clickhouse/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/fashion-spring-druid/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/fashion-spring-jta/src/main/java" charset="UTF-8" />

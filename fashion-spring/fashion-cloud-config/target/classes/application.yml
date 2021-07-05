@@ -9,8 +9,6 @@ spring:
       label: master
   application:
     name: config
-  profiles:
-    active: dev
 management:
   endpoint:
     shutdown:
