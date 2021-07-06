@@ -1,8 +1,8 @@
 package com.fashion.nacos.register.consumer.controller;
 
-import com.alibaba.dubbo.config.annotation.Reference;
 import com.fashion.nacos.register.api.ITestService;
 import com.fashion.nacos.register.api.RUserDTO;
+import org.apache.dubbo.config.annotation.Reference;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class RegisterController {
 
-    @Reference
+    @Reference(timeout = 3000)
     private ITestService testService;
 
     @GetMapping("/hello")

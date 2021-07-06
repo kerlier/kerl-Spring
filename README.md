@@ -783,6 +783,57 @@ public class MyOwnBeanNameAware implements BeanNameAware {
     }
 }
 ```
+### Dubbo序列化的方式
 
+源代码如下：默认的序列化方式是hessian
+hessian会在根据type获取反序列化器
+
+这里的type是提供者端的返回参数的class全类名 例如：com.fashion.dto.UserDto
+
+并且会在消费者尝试Class.forName(type),看是否能初始化这个类
+
+如果最终都没有找到这个类,会返回一个Map的反序列化器。所以消费者端可以默认用map接受，而且不报错
+
+如果消费者不用map接收的话，会接着走下面的方式
+
+会进行消费者这边的class进行找序列化器
+```
+
+public Deserializer getObjectDeserializer(String type, Class cl)
+            throws HessianProtocolException {
+        Deserializer reader = getObjectDeserializer(type);
+
+        if (cl == null
+                || cl.equals(reader.getType())
+                || cl.isAssignableFrom(reader.getType())
+                || HessianHandle.class.isAssignableFrom(reader.getType())) {
+            return reader;
+        }
+
+        if (log.isLoggable(Level.FINE)) {
+            log.fine("hessian: expected '" + cl.getName() + "' at '" + type + "' ("
+                    + reader.getType().getName() + ")");
+        }
+
+        return getDeserializer(cl);
+    }
+    
+  
+public Deserializer getObjectDeserializer(String type)
+            throws HessianProtocolException {
+        Deserializer deserializer = getDeserializer(type);
+
+        if (deserializer != null)
+            return deserializer;
+        else if (_hashMapDeserializer != null)
+            return _hashMapDeserializer;
+        else {
+            _hashMapDeserializer = new MapDeserializer(HashMap.class);
+
+            return _hashMapDeserializer;
+        }
+    }
+
+```
 
 

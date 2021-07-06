@@ -36,6 +36,7 @@
       <module>basic-spring-file</module>
       <module>basic-spring-md5</module>
       <module>basic-spring-beanpost-processor</module>
+      <module>fashion-nacos-register-consumer-no-api</module>
   </modules>
 
   <name>fashion-spring</name>

@@ -4,10 +4,12 @@ import com.esotericsoftware.kryo.Kryo;
 import com.esotericsoftware.kryo.io.Output;
 import com.fashion.nacos.register.api.RUserDTO;
 import com.fashion.nacos.register.api.UserDTO;
+import org.apache.catalina.User;
 import org.apache.dubbo.common.serialize.kryo.utils.KryoUtils;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.util.Map;
 
 /**
  * @Author: yangyuguang
@@ -16,14 +18,16 @@ import java.io.FileOutputStream;
 public class TestMain {
 
     public static void main(String[] args) throws FileNotFoundException {
-        Kryo kryo = KryoUtils.get();
-        kryo.register(UserDTO.class);
-        kryo.register(RUserDTO.class);
-        Output output = new Output(new FileOutputStream("C:\\Users\\kerl\\Desktop\\robot\\tet.file"),10240);
-        UserDTO userDTO = new UserDTO();
-        userDTO.setUsername("test");
-        userDTO.setPassword("test");
-        kryo.writeObject(output, userDTO);
+        Class<? extends UserDTO> aClass = new UserDTO().getClass();
+        System.out.println(Map.class.isAssignableFrom(aClass));
+//        Kryo kryo = KryoUtils.get();
+//        kryo.register(UserDTO.class);
+//        kryo.register(RUserDTO.class);
+//        Output output = new Output(new FileOutputStream("C:\\Users\\kerl\\Desktop\\robot\\tet.file"),10240);
+//        UserDTO userDTO = new UserDTO();
+//        userDTO.setUsername("test");
+//        userDTO.setPassword("test");
+//        kryo.writeObject(output, userDTO);
 //
 //        Input input = new Input(new FileInputStream("C:\\Users\\kerl\\Desktop\\robot\\tet.file"),10240);
 //        RUserDTO rUserDTO = kryo.readObject(input, RUserDTO.class);

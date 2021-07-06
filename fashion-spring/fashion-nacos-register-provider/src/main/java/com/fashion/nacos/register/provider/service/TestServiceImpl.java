@@ -1,8 +1,8 @@
 package com.fashion.nacos.register.provider.service;
 
-import com.alibaba.dubbo.config.annotation.Service;
 import com.fashion.nacos.register.api.ITestService;
 import com.fashion.nacos.register.api.UserDTO;
+import org.apache.dubbo.config.annotation.Service;
 
 /**
  * @Author: yangyuguang

@@ -1,13 +1,9 @@
 spring:
   application:
-    name: register-provider
-
+    name: register-consumer-no-api
 dubbo:
   application:
-    name: register-provider
-  protocol:
-    name: dubbo
-    port: 20881
+    name: register-consumer
   registry:
     address: nacos://127.0.0.1:8848
     check: false
@@ -16,4 +12,4 @@ dubbo:
 #  provider:
 #    serialization: kryo
 server:
-  port: 8099
+  port: 8082

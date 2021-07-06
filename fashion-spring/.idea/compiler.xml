@@ -14,6 +14,7 @@
         <module name="fashion-spring-rocketmq" />
         <module name="fashion-spring-druid" />
         <module name="fashion-nacos-register-api" />
+        <module name="fashion-nacos-register-consumer-no-api" />
         <module name="fashion-spring-listener" />
         <module name="fashion-cloud-config" />
         <module name="nacos-config" />
@@ -50,6 +51,7 @@
       <module name="fashion-nacos-register" options="-parameters" />
       <module name="fashion-nacos-register-api" options="-parameters" />
       <module name="fashion-nacos-register-consumer" options="-parameters" />
+      <module name="fashion-nacos-register-consumer-no-api" options="-parameters" />
       <module name="fashion-nacos-register-provider" options="-parameters" />
       <module name="fashion-spring-clickhouse" options="-parameters" />
       <module name="fashion-spring-druid" options="-parameters" />
