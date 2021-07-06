@@ -34,6 +34,8 @@
       <module>fashion-spring-xxl-job</module>
       <module>fashion-spring-listener</module>
       <module>basic-spring-file</module>
+      <module>basic-spring-md5</module>
+      <module>basic-spring-beanpost-processor</module>
   </modules>
 
   <name>fashion-spring</name>

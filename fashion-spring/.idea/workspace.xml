@@ -1,220 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AutoImportSettings">
-    <option name="autoReloadType" value="ALL" />
-  </component>
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:maven" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:maven" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:fashion-spring" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select />
+    <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9948e2e0-f731-4cc5-9d14-9b7874b3f953" name="Default Changelist" comment="">
+    <list default="true" id="ec745c04-f463-49e7-b6e4-47ee2d1353f3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/basic-spring-beanpost-processor/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-spring-beanpost-processor/src/main/java/com/basic/spring/bean/post/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-spring-beanpost-processor/src/main/java/com/basic/spring/bean/post/beanNameAware/MyOwnBeanNameAware.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-spring-beanpost-processor/src/main/java/com/basic/spring/bean/post/component/InitiaBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-spring-beanpost-processor/src/main/java/com/basic/spring/bean/post/component/My2Component.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-spring-beanpost-processor/src/main/java/com/basic/spring/bean/post/component/MyConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-spring-beanpost-processor/src/main/java/com/basic/spring/bean/post/component/MyOwnBeanPostProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-spring-beanpost-processor/src/main/java/com/basic/spring/bean/post/component/MyOwnComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-spring-beanpost-processor/src/main/java/com/basic/spring/bean/post/contextAware/ApplicationContextUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-spring-beanpost-processor/src/main/java/com/basic/spring/bean/post/contextAware/My3Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-spring-beanpost-processor/src/main/java/com/basic/spring/bean/post/contextAware/MyBean1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-spring-beanpost-processor/src/main/java/com/basic/spring/bean/post/environmentAware/My4Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-spring-beanpost-processor/src/main/java/com/basic/spring/bean/post/environmentAware/MyEnvironmentConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-spring-beanpost-processor/src/main/java/com/basic/spring/bean/post/instantiationAware/My2Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-spring-beanpost-processor/src/main/java/com/basic/spring/bean/post/instantiationAware/MyInstantiationBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-spring-beanpost-processor/src/main/java/com/basic/spring/bean/post/instantiationAware/MyOwnInstantiationAwareBeanPostProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-spring-beanpost-processor/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-spring-md5/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-spring-md5/src/main/java/com/basic/spring/md5/MD5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-spring-md5/src/main/java/com/basic/spring/md5/MdApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-spring/src/main/java/com/fashion/spring/cache/CacheApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-spring/src/main/java/com/fashion/spring/cache/OwnCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-spring/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/basic-spring/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fashion-spring-listener/src/main/java/com/fashion/spring/listener/MyOwnListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-spring-listener/src/main/java/com/fashion/spring/listener/MyOwnListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fashion-spring-listener/src/main/java/com/fashion/spring/pulisher/MyOwnPublisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-spring-listener/src/main/java/com/fashion/spring/pulisher/MyOwnPublisher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CodeInsightWorkspaceSettings">
-    <option name="optimizeImportsOnTheFly" value="true" />
-  </component>
-  <component name="CodeStyleSettingsInfer">
-    <option name="done" value="true" />
-  </component>
-  <component name="CompilerWorkspaceConfiguration">
-    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
-  </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Enum" />
-        <option value="package-info" />
-        <option value="FxmlFile" />
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="C:/Program Files/JetBrains/IntelliJ IDEA 2020.2.3/plugins/maven/lib/maven3" />
-        <option name="userSettingsFile" value="$USER_HOME$/.m2/settings.xml" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
-  <component name="MavenRunner">
-    <option name="skipTests" value="true" />
-  </component>
-  <component name="ProjectCodeStyleSettingsMigration">
-    <option name="version" value="1" />
-  </component>
-  <component name="ProjectId" id="1pBsAkBJ481X4admykUdvBianmm" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
-  <component name="PropertiesComponent">
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\git-repo\kerl-Spring\fashion-spring\fashion-spring-yml\src\main\resources" />
-      <recent name="C:\git-repo\kerl-Spring\fashion-spring\image" />
-      <recent name="C:\git-repo\kerl-Spring\fashion-spring\fahion-spring-flowable\src\main\resources" />
-      <recent name="C:\git-repo\kerl-Spring\fashion-spring\fashion-spring-jta\src\main\resources\dataTwoMapper" />
-      <recent name="C:\git-repo\kerl-Spring\fashion-spring\fashion-spring-jta\src\main\resources\dataOneMapper" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.fashion.nacos.register.api" />
-      <recent name="com.fashion.spring.yml.config" />
-      <recent name="com.fashion.spring.mybatisplus.dto" />
-      <recent name="com.fashion.spring.mybatisplus.mapper" />
-      <recent name="com.fashion.jta.datasource.two" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\git-repo\kerl-Spring\fashion-spring\fahion-spring-flowable\src\main\resources\processes" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Application.Application">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.fashion.spring.Application" />
-      <module name="basic-spring" />
+      <option name="MAIN_CLASS_NAME" value="com.basic.spring.bean.post.Application" />
+      <module name="basic-spring-beanpost-processor" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.fashion.spring.*" />
+          <option name="PATTERN" value="com.basic.spring.bean.post.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CallableUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.fashion.spring.callable.CallableUtil" />
-      <module name="basic-spring" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.fashion.spring.callable.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FileApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.fashion.spring.file.FileApplication" />
-      <module name="basic-spring-file" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.fashion.spring.file.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MybatisPlusGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.fashion.spring.mybatisplus.generate.MybatisPlusGenerator" />
-      <module name="fashion-spring-mybatis-plus" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.fashion.spring.mybatisplus.generate.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReturnMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.fashion.spring.callable.ReturnMain" />
-      <module name="basic-spring" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.fashion.spring.callable.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="fashion-spring-yml" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fashion.spring.yml.Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -222,78 +61,13 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Application" />
-        <item itemvalue="Application.CallableUtil" />
-        <item itemvalue="Application.FileApplication" />
-        <item itemvalue="Application.ReturnMain" />
-        <item itemvalue="Application.MybatisPlusGenerator" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-  <component name="SshConsoleOptionsProvider">
-    <option name="myEncoding" value="UTF-8" />
-  </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="9948e2e0-f731-4cc5-9d14-9b7874b3f953" name="Default Changelist" comment="" />
-      <created>1583804986252</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1583804986252</updated>
-      <workItem from="1614667678522" duration="14664000" />
-      <workItem from="1615183307598" duration="7035000" />
-      <workItem from="1615276227731" duration="6075000" />
-      <workItem from="1616566850726" duration="462000" />
-      <workItem from="1616567381791" duration="42388000" />
-      <workItem from="1617323253661" duration="3118000" />
-      <workItem from="1617351570758" duration="15303000" />
-      <workItem from="1619077716679" duration="6661000" />
-      <workItem from="1620780230169" duration="11411000" />
-      <workItem from="1620801208386" duration="2398000" />
-      <workItem from="1620866082408" duration="243000" />
-      <workItem from="1620866334369" duration="15752000" />
-      <workItem from="1621391670271" duration="13208000" />
-      <workItem from="1622875079902" duration="2629000" />
-      <workItem from="1622989315265" duration="10978000" />
-      <workItem from="1623918246223" duration="3457000" />
-      <workItem from="1623984119545" duration="616000" />
-      <workItem from="1624324180257" duration="20089000" />
-      <workItem from="1625018291681" duration="600000" />
-      <workItem from="1625105518484" duration="12991000" />
-    </task>
     <servers />
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
   <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/fashion-spring-xxl-job/src/main/java/com/spring/xxl/job/util/ApiUtil.java</url>
-          <line>107</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
-  <component name="antWorkspaceConfiguration">
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
-    <option name="FILTER_TARGETS" value="false" />
   </component>
 </project>

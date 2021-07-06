@@ -25,6 +25,8 @@
         <module name="fashion-jwt-token" />
         <module name="fashion-spring-jta" />
         <module name="fashion-spring-yml" />
+        <module name="basic-spring-beanpost-processor" />
+        <module name="basic-spring-md5" />
         <module name="spring-api-swagger" />
         <module name="fashion-spring-clickhouse" />
         <module name="basic-spring" />
@@ -38,7 +40,9 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="basic-spring" options="-parameters" />
+      <module name="basic-spring-beanpost-processor" options="-parameters" />
       <module name="basic-spring-file" options="-parameters" />
+      <module name="basic-spring-md5" options="-parameters" />
       <module name="basic-spring-mybatis" options="-parameters" />
       <module name="fahion-spring-flowable" options="-parameters" />
       <module name="fashion-cloud-config" options="-parameters" />

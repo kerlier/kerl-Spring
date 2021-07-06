@@ -637,5 +637,152 @@ public class MyOwnListener implements ApplicationListener {
 
 ```
 
+### InitializingBean
+
+InitializingBean中有个方法是afterPropertiesSet();
+
+执行顺序是构造方法> postContruct构造方法 >afterPropertiesSet() > spring的init-method方法;
+
+常见的实现类：
+MyBatisBatchItemWriter中的afterPropertiesSet 用来检查是否有SqlSession以及statementId
+JdbcTemplate中的afterPropertiesSet用来检查dataSource是否为空
+RedisTemplate中的afterPropertiesSet用来检查RedisConnectionFactory是否为空
+HibernateTemplate中的afterPropertiesSet用来检查SessionFactory是否为空
+
+
+### BeanPostProcessor
+
+beanPostProcessor简单来说，就是bean后置处理器
+
+##### BeanPostProcessor中的两个方法
+```
+
+@Nullable
+default Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
+    return bean;
+}
+
+@Nullable
+default Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
+    return bean;
+}
+
+这里的两个方法针对的是InitializingBean的afterPropertiesSet方法
+执行顺序是 
+postProcessBeforeInitialization 
+->InitializingBean的afterPropertiesSet 
+->Bean的Init方法,需要通过@Bean(value = "myOwnComponent",initMethod = "init") initMethod指定
+->postProcessAfterInitialization 
+
+```
+
+
+##### Instantiation Initialization
+
+Instantiation 实例化 对象还未生成
+Instantiation 初始化 对象已经生成
+
+##### InstantiationAwareBeanPostProcessor
+
+主要作用在于目标对象的实例化过程中需要处理的事情，包括实例化对象的前后过程以及实例的属性设置
+```
+此时bean已经实例化，但是没有被初始化，对象还未生成
+@Override
+public Object postProcessBeforeInstantiation(Class<?> beanClass, String beanName) throws BeansException {
+    return null;
+}
+
+
+return true的话，会执行postProcessPropertyValues
+return false, 不会执行postProcessPropertyValues
+@Override
+public boolean postProcessAfterInstantiation(Object bean, String beanName) throws BeansException {
+    if(Objects.equals(beanName,"myInstantiationBean")) {
+        System.out.println("在bean初始化之后执行，这时候bean已经有了");
+    }
+    return true;
+}
+
+@Override
+public PropertyValues postProcessPropertyValues(PropertyValues pvs, PropertyDescriptor[] pds, Object bean, String beanName) throws BeansException {
+    if(Objects.equals(beanName,"myInstantiationBean")) {
+        System.out.println("postProcessPropertyValues");
+    }
+    return pvs;
+}
+
+此时bean已经被初始化，对象已经有了
+@Override
+public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
+    if(Objects.equals(beanName,"myInstantiationBean")) {
+        System.out.println("postProcessBeforeInitialization");
+    }
+    return bean;
+}
+
+此时bean已经被初始化，对象已经有了
+@Override
+public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
+    if(Objects.equals(beanName,"myInstantiationBean")) {
+        System.out.println("postProcessAfterInitialization");
+    }
+    return bean;
+}
+```
+
+#### ApplicationContextAware
+实现这个接口的类，会自动将applicationContext注入进来
+
+使用场景：比如说util中使用spring中的所有的bean,可以用下面方式
+```
+这里也是需要进行spring托管
+@Component
+public class ApplicationContextUtil implements ApplicationContextAware {
+
+    private static ApplicationContext applicationContext;
+    @Override
+    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
+        ApplicationContextUtil.applicationContext = applicationContext;
+    }
+
+    public static Object getBean(String beanName){
+        return applicationContext.getBean(beanName);
+    }
+}
+```
+
+#### EnvironmentAware
+实现EnvironmentAware并set后, 在工程启动时可以获得application.properties的配置文件配置的属性值
+实现方式如下
+```
+@Configuration
+public class MyEnvironmentConfig implements EnvironmentAware {
+
+    private Environment environment;
+
+    @Override
+    public void setEnvironment(Environment environment) {
+        this.environment = environment;
+    }
+
+    public String getProperty(String propertyName){
+        return environment.getProperty(propertyName);
+    }
+}
+```
+#### BeanNameAware
+
+BeanNameAware简单来说，就是在设置bean名字时,会执行这个方法
+```
+@Component(value = "test")
+public class MyOwnBeanNameAware implements BeanNameAware {
+
+    @Override
+    public void setBeanName(String name) {
+        System.out.println("MyOwnBeanNameAware: " + name);
+    }
+}
+```
+
 
 
