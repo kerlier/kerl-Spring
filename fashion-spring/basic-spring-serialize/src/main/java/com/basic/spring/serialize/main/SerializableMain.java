@@ -1,8 +1,8 @@
 package com.basic.spring.serialize.main;
 
+import com.basic.spring.serialize.pojo.PersonProto;
 import com.basic.spring.serialize.pojo.UserDto;
 import com.basic.spring.serialize.util.SerialUtil;
-import com.sun.tools.internal.xjc.reader.xmlschema.bindinfo.BIConversion;
 
 import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;
@@ -42,6 +42,7 @@ public class SerializableMain {
 
         UserDto userDto2 = SerialUtil.kryoDSerial(kryoBytes, UserDto.class);
         System.out.println(userDto2.getUsername());
+
     }
 
 
