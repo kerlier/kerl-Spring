@@ -907,4 +907,45 @@ java的序列化：就是将对象转化成字节数组，可以在网络上传�
   
 java的序列化文件一般以.ser结尾
 
+
+jdk: 原生java序列化方式,效率较慢
+hessian: 跨语言的java序列化方式，所以实现serializableId可以不同
+kryo: 专门针对与java的，不能跨语言
+
+ProtoBuf: 跨语言的序列化框架
+
+这里的跨语言指的是.proto文件，可以生成不同语言的类，而字节数组可以互相转换
+使用步骤:
+1. 定义.proto文件
+
+syntax="proto3";
+option java_package = "com.basic.spring.serialize.pojo";
+option java_outer_classname = "PersonProto";
+message Person  {
+  string name = 1;
+  int32 age = 2;
+}
+
+2. 执行命令
+
+protoc -I=$SRC_DIR --java_out=$DST_DIR $SRC_DIR/PersonProto.proto
+这个命令会在DST_DIR目录下生成对应的代码
+将代码拷贝到项目中
+
+3. 使用
+序列化:
+PersonProto.Person.Builder builder = PersonProto.Person.newBuilder();
+builder.setAge(1);
+builder.setName("yangyuguang");
+byte[] bytes = builder.build().toByteArray();
+bytes可以输入到文件以及网络中
+
+反序列化:
+try{
+    PersonProto.Person person = PersonProto.Person.parseFrom(bytes);
+    System.out.println(person.getAge());
+    System.out.println(person.getName());
+}catch (Exception e){
+    e.printStackTrace();
+}
 ```
