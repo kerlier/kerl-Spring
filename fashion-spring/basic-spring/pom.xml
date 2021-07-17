@@ -13,11 +13,23 @@
 
     <name>basic-spring</name>
 
+    <properties>
+        <project.name>basic-spring</project.name>
+        <project.version>1.0</project.version>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/net.java.dev.jna/jna -->
+        <dependency>
+            <groupId>net.java.dev.jna</groupId>
+            <artifactId>jna</artifactId>
+            <version>5.8.0</version>
         </dependency>
 
         <dependency>
@@ -49,6 +61,30 @@
                         </goals>
                     </execution>
                 </executions>
+
+                <configuration>
+                    <image>
+                        <!--配置镜像名称-->
+                        <name>${project.name}:${project.version}</name>
+                        <!--镜像打包完成后自动推送到镜像仓库-->
+                        <publish>true</publish>
+                    </image>
+                    <docker>
+                        <!--Docker远程管理地址-->
+                        <host>unix:///var/run/docker.sock</host>
+                        <!--不使用TLS访问-->
+                        <tlsVerify>false</tlsVerify>
+                        <!--Docker推送镜像仓库配置-->
+                        <publishRegistry>
+                            <!--推送镜像仓库用户名-->
+                            <username>yangyuguang</username>
+                            <!--推送镜像仓库密码-->
+                            <password>199626</password>
+                            <!--推送镜像仓库地址-->
+                            <url>unix:///var/run/docker.sock</url>
+                        </publishRegistry>
+                    </docker>
+                </configuration>
             </plugin>
         </plugins>
     </build>

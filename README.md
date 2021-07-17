@@ -837,3 +837,74 @@ public Deserializer getObjectDeserializer(String type)
 ```
 
 
+### docker
+```
+springboot官方docker插件：
+<build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+
+                <configuration>
+                    <image>
+                        <!--配置镜像名称-->
+                        <name>${project.name}:${project.version}</name>
+                        <!--镜像打包完成后自动推送到镜像仓库-->
+                        <publish>true</publish>
+                    </image>
+                    <docker>
+                        <!--Docker远程管理地址-->
+                        <host>unix:///var/run/docker.sock</host>
+                        <!--不使用TLS访问-->
+                        <tlsVerify>false</tlsVerify>
+                        <!--Docker推送镜像仓库配置-->
+                        <publishRegistry>
+                            <!--推送镜像仓库用户名-->
+                            <username>test</username>
+                            <!--推送镜像仓库密码-->
+                            <password>test</password>
+                            <!--推送镜像仓库地址-->
+                            <url>unix:///var/run/docker.sock</url>
+                        </publishRegistry>
+                    </docker>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    
+配置的host信息:
+   window: 配置为host:2375
+   mac：
+       docker for destop:
+          unix:///var/run/docker.sock
+       docker toolbox:
+          https://192.168.99.100:2376
+          
+          
+2. 在打包的时候，需要指定不同框架的，比如说arm和amd
+可以从docker hub中寻找对应的基本镜像
+```
+
+#### Java序列化
+```
+
+java的序列化：就是将对象转化成字节数组，可以在网络上传播，
+在接受者那里，再将字节数组转成对象的过程。
+序列化的过程是基于jvm独立的，是跨平台，也就是可以跨不同的操作系统。
+
+
+一个类被序列化需要满足两个条件
+  1. 类需要实现Serialiable接口
+  2. 属性也是可以被序列化，不想被序列化的属性需要标明transient
+  
+java的序列化文件一般以.ser结尾
+
+```

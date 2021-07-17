@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="basic-spring-mybatis" />
         <module name="spring-job-schedule" />
+        <module name="basic-spring-serialize" />
         <module name="fashion-nacos-register" />
         <module name="fashion-nacos-register-provider" />
         <module name="fashion-spring-rocketmq" />
@@ -37,6 +38,26 @@
         <module name="fashion-spring-mybatis-plus" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="nacos-config-sample" target="1.8" />
+      <module name="nacos-config-spring-boot-actuator" target="1.8" />
+      <module name="nacos-config-spring-boot-autoconfigure" target="8" />
+      <module name="nacos-config-spring-boot-starter" target="1.8" />
+      <module name="nacos-discovery-sample" target="1.8" />
+      <module name="nacos-discovery-spring-boot-actuator" target="1.8" />
+      <module name="nacos-discovery-spring-boot-autoconfigure" target="1.8" />
+      <module name="nacos-discovery-spring-boot-starter" target="1.8" />
+      <module name="nacos-embedded-webserver" target="1.6" />
+      <module name="nacos-spring-boot-base" target="1.8" />
+      <module name="nacos-spring-boot-parent" target="1.8" />
+      <module name="nacos-spring-boot-project" target="1.5" />
+      <module name="nacos-spring-boot-project (1)" target="1.5" />
+      <module name="nacos-spring-boot-samples" target="1.8" />
+      <module name="nacos-spring-context" target="1.6" />
+      <module name="nacos-spring-parent" target="1.6" />
+      <module name="nacos-spring-samples" target="1.6" />
+      <module name="nacos-spring-webmvc-sample" target="1.6" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
@@ -45,6 +66,7 @@
       <module name="basic-spring-file" options="-parameters" />
       <module name="basic-spring-md5" options="-parameters" />
       <module name="basic-spring-mybatis" options="-parameters" />
+      <module name="basic-spring-serialize" options="-parameters" />
       <module name="fahion-spring-flowable" options="-parameters" />
       <module name="fashion-cloud-config" options="-parameters" />
       <module name="fashion-jwt-token" options="-parameters" />
