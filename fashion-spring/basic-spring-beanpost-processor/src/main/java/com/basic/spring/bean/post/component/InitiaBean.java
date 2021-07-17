@@ -1,12 +1,13 @@
 package com.basic.spring.bean.post.component;
 
 import org.springframework.beans.factory.InitializingBean;
+import org.springframework.stereotype.Component;
 
 /**
  * @Author: yangyuguang
  * @Date: 2021/7/5 14:59
  */
-//@Component("myOwnComponent")
+@Component("myOwnComponent")
 public class InitiaBean implements InitializingBean {
 
     public InitiaBean(){

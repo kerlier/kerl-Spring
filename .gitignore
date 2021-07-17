@@ -61,3 +61,10 @@ application-*.properties
 *.perm
 *.bak
 *.log
+/fashion-spring/.idea/*.xml
+fashion-spring/.idea/encodings.xml
+fashion-spring/.idea/jarRepositories.xml
+fashion-spring/.idea/misc.xml
+fashion-spring/.idea/vcs.xml
+fashion-spring/.idea/workspace.xml
+fashion-spring/nacos-config/target/

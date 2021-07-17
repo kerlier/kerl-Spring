@@ -1,9 +1,9 @@
 nacos:
   config:
     server-addr: 127.0.0.1:8848
-    namespace: f809bd6f-e655-4943-b842-4b1b8e0c5157
+    namespace: b21c6bb1-be4b-4f99-a0b7-ea2619318fa9
 server:
-  port: 8080
+  port: 10007
 spring:
   application:
     name: nacos-config-application
