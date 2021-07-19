@@ -915,6 +915,10 @@ kryo: 专门针对与java的，不能跨语言
 ProtoBuf: 跨语言的序列化框架
 
 这里的跨语言指的是.proto文件，可以生成不同语言的类，而字节数组可以互相转换
+protobuf需要安装：
+mac: brew install protobuf
+需要配置环境变量
+
 使用步骤:
 1. 定义.proto文件
 

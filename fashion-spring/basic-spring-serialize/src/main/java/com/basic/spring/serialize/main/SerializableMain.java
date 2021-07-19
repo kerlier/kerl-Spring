@@ -13,8 +13,11 @@ import java.io.ObjectOutputStream;
 public class SerializableMain {
     public static void main(String[] args) {
         //将对象写入到文件中
-        UserDto userDto = new UserDto();
-        userDto.setUsername("yangyuguang");
+        PersonProto.Person.Builder builder = PersonProto.Person.newBuilder();
+        builder.setName("yangyuguang");
+        PersonProto.Person userDto = builder.build();
+//        UserDto userDto = new UserDto();
+//        userDto.setUsername("yangyuguang");
 //        jdkSerial(userDto);
 
         byte[] jdkBytes = SerialUtil.jdkSerialToByteArray(userDto);
@@ -25,23 +28,25 @@ public class SerializableMain {
 
         byte[] kryoBytes = SerialUtil.kryoSerial(userDto);
 
+        byte[] protobufBytes = userDto.toByteArray();
+
         System.out.println("jdk byte array length :" + jdkBytes.length);
         System.out.println("hessian byte array length :" + hessianBytes.length);
         System.out.println("hessian2 byte array length :" + hessian2Bytes.length);
         System.out.println("kryo byte array length :" + kryoBytes.length);
-
+        System.out.println("protobuf byte array length :" + protobufBytes.length);
 
         //output: jdk 106; hessian 69; hessian2: 65, kryo: 13
-        //经过对比，kryo > hessian2 > hessian > jdk
-        //kryo的效率大大超过了hessian以及jdk
+        //经过对比，protobuf > ckryo > hessian2 > hessian > jdk
+        //kryo的效率大大超过了hessian以及jdk,protobuf的效率比kryo更高
 
-
-        UserDto  userDto1 = SerialUtil.hessianDSerial(hessianBytes);
-
-        System.out.println(userDto1.getUsername());
-
-        UserDto userDto2 = SerialUtil.kryoDSerial(kryoBytes, UserDto.class);
-        System.out.println(userDto2.getUsername());
+//
+//        UserDto  userDto1 = SerialUtil.hessianDSerial(hessianBytes);
+//
+//        System.out.println(userDto1.getUsername());
+//
+//        UserDto userDto2 = SerialUtil.kryoDSerial(kryoBytes, UserDto.class);
+//        System.out.println(userDto2.getUsername());
 
     }
 
