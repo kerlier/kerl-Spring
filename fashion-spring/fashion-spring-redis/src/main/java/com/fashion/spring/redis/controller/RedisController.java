@@ -2,6 +2,8 @@ package com.fashion.spring.redis.controller;
 
 import com.fashion.spring.redis.annotation.RedisLockAnnotation;
 import com.fashion.spring.redis.enums.RedisLockTypeEnum;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,6 +16,9 @@ import java.awt.print.Book;
  */
 @RestController
 public class RedisController {
+
+    @Autowired
+    private RedisTemplate redisTemplate;
 
     @GetMapping("/getRedis")
     @RedisLockAnnotation(typeEnum = RedisLockTypeEnum.ONE, lockTime = 3)

@@ -46,7 +46,7 @@ public class FileWatcher {
                     }
                 }
             }
-        },5 * 1000L,5 * 1000L, TimeUnit.MILLISECONDS);
+        },1L,3L, TimeUnit.SECONDS);
     }
 
     public void print(File file){

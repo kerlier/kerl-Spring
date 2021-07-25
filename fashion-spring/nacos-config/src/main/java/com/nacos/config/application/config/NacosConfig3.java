@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
  * @Date: 2021/5/12 8:59
  */
 @Component
-@NacosPropertySource(dataId = "nacos-config", groupId = "xfd1", autoRefreshed = true)
+@NacosPropertySource(dataId = "nacos-config", groupId = "test1", autoRefreshed = true)
 public class NacosConfig3 {
 
     @NacosValue(value = "${name}", autoRefreshed = true)

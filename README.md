@@ -113,6 +113,8 @@ server:
    // 这里的groupId可能没什么用,dataId一样的话，
    // nacos会读取最新修改的配置文件
    // 所以在线上使用的时候，dataId尽可能不一样
+   // 这里的问题是nacos-starter的问题，而不是nacos本身的问题
+   // springCloud的groupId和dataId是起作用的
 
    @Component
    @NacosPropertySource(dataId = "nacos-config-2", autoRefreshed = true)
@@ -412,6 +414,18 @@ spring:
     }
     注：MybatisPlus中的条件查询一般会使用QueryWrapper
     这个对象会满足我们大部分的需求
+
+    3. or查询
+        wrapper.eq("id",1);
+        wrapper.and(x -> x.like("cname", criteria.getKey())
+                    .or()
+                    .like("settle_item", criteria.getKey())
+                    .or()
+                    .like("batch_no", criteria.getKey()));
+       上面的代码相当于
+       select * from table where id=1 and ( cname like key 
+               or settle_item like key 
+               or batch_no like key)
 ```
 ##### 4. 常用的MybatisPlus拦截器
 ```
@@ -645,8 +659,11 @@ InitializingBean中有个方法是afterPropertiesSet();
 
 常见的实现类：
 MyBatisBatchItemWriter中的afterPropertiesSet 用来检查是否有SqlSession以及statementId
-JdbcTemplate中的afterPropertiesSet用来检查dataSource是否为空
+
+JdbcTemplate中的afterPropertiesSet用来检查dataSource是否为空;
+
 RedisTemplate中的afterPropertiesSet用来检查RedisConnectionFactory是否为空
+
 HibernateTemplate中的afterPropertiesSet用来检查SessionFactory是否为空
 
 
@@ -784,5 +801,393 @@ public class MyOwnBeanNameAware implements BeanNameAware {
 }
 ```
 
+
+### JVM缓存中的使用
+
+像redis缓存,多个服务可以同时访问同样的内容
+
+这里介绍的是guava的缓存工具类
+
+```
+1. 引入依赖
+    <dependency>
+        <groupId>com.google.guava</groupId>
+        <artifactId>guava</artifactId>
+        <version>21.0</version>
+    </dependency>
+2.代码实现
+
+private LoadingCache<Long, String> build;
+
+@PostConstruct
+public void init(){
+    build = CacheBuilder.newBuilder()
+            .expireAfterWrite(5L, TimeUnit.SECONDS)
+            .maximumSize(10000)
+            .build(new CacheLoader<Long, String>() {
+                @Override
+                public String load(Long uid) throws Exception {
+                    System.out.println("缓存值" + uid);
+                    if(Objects.equals(uid,2L)){
+                        System.out.println("报错");
+                        throw new ServiceException("缓存出错");
+                    }
+                    return "success";
+                }
+            });
+}
+
+expireAfterWrite表示在多长时间过期
+maximumSize表示缓存的key数量多少
+当从cache中获取key的时候，如果没有key,会执行load方法.
+
+3.获取值
+get(id)会需要try_catch
+getUnchecked(id)不需要try_catch
+```
+#### elsticsearch
+```aidl
+POST /_aliases
+{
+
+    "actions" : [
+        { "add" : { "index" : "order-info_v3", "alias" : "order-info-alias" } }
+
+    ]
+
+}
+
+
+POST _reindex
+{
+
+  "source": {
+
+    "index": "order-info_v2"
+
+  },
+
+  "dest": {
+
+    "index": "order-info_v3"
+  }
+
+}
+
+PUT order-info_v3
+{
+  "settings": {
+    "number_of_shards": 5,
+    "number_of_replicas": 5,
+    "analysis": {
+      "analyzer": {
+        "char_analyzer": {
+          "char_filter": [
+            "split_by_whitespace_filter"
+          ],
+          "tokenizer": "whitespace"
+        }
+      },
+      "char_filter": {
+        "split_by_whitespace_filter": {
+          "type": "pattern_replace",
+          "pattern": "(.+?)",
+          "replacement": "$1 "
+        }
+      }
+    }
+  },
+  "mappings": {
+    "properties": {
+      "id": {
+        "type": "long"
+      },
+      "appid": {
+        "type": "text",
+        "analyzer": "char_analyzer",
+        "fields": {
+          "keyword": {
+            "type": "keyword"
+          }
+        }
+      },
+      "cname": {
+        "type": "text"
+      },
+      "sendCname": {
+        "type": "text"
+      },
+      "orderNo": {
+        "type": "text",
+        "analyzer": "char_analyzer",
+        "fields": {
+          "keyword": {
+            "type": "keyword"
+          }
+        }
+      },
+      "tradeNo": {
+        "type": "text",
+        "analyzer": "char_analyzer",
+        "fields": {
+          "keyword": {
+            "type": "keyword"
+          }
+        }
+      },
+      "outOrderNo": {
+        "type": "text",
+        "analyzer": "char_analyzer",
+        "fields": {
+          "keyword": {
+            "type": "keyword"
+          }
+        }
+      },
+      "payType": {
+        "type": "integer"
+      },
+      "payAccountNo": {
+        "type": "text"
+      },
+      "receiveAccount": {
+        "type": "text",
+        "analyzer": "char_analyzer",
+        "fields": {
+          "keyword": {
+            "type": "keyword"
+          }
+        }
+      },
+      "receiveName": {
+        "type": "text",
+        "analyzer": "char_analyzer",
+        "fields": {
+          "keyword": {
+            "type": "keyword"
+          }
+        }
+      },
+      "idCard": {
+        "type": "text"
+      },
+      "mobile": {
+        "type": "text",
+        "analyzer": "char_analyzer",
+        "fields": {
+          "keyword": {
+            "type": "keyword"
+          }
+        }
+      },
+      "amount": {
+        "type": "double"
+      },
+      "totalFee": {
+        "type": "double"
+      },
+      "fee": {
+        "type": "double"
+      },
+      "feeRate": {
+        "type": "double"
+      },
+      "year": {
+        "type": "keyword"
+      },
+      "bankSerialNo": {
+        "type": "keyword"
+      },
+      "status": {
+        "type": "integer"
+      },
+      "endTime": {
+        "type": "date"
+      },
+      "failMsg": {
+        "type": "text"
+      },
+      "createdAt": {
+        "type": "date"
+      },
+      "updatedAt": {
+        "type": "date"
+      },
+      "settleId": {
+        "type": "long"
+      },
+      "settleStatus": {
+        "type": "integer"
+      },
+      "declareStatus": {
+        "type": "integer"
+      },
+      "accountType": {
+        "type": "keyword"
+      },
+      "tax": {
+        "type": "double"
+      },
+      "totalAmount": {
+        "type": "double"
+      }
+    }
+  }
+}
+PUT order-info
+{
+  "settings": {
+    "number_of_shards": 5,
+    "number_of_replicas": 5,
+    "analysis": {
+      "analyzer": {
+        "char_analyzer": {
+          "char_filter": [
+            "split_by_whitespace_filter"
+          ],
+          "tokenizer": "whitespace"
+        }
+      },
+      "char_filter": {
+        "split_by_whitespace_filter": {
+          "type": "pattern_replace",
+          "pattern": "(.+?)",
+          "replacement": "$1 "
+        }
+      }
+    }
+  },
+  "mappings": {
+    "properties": {
+      "id": {
+        "type": "long"
+      },
+      "appid": {
+        "type": "text",
+        "analyzer": "char_analyzer",
+        "fields": {
+          "keyword": {
+            "type": "keyword"
+          }
+        }
+      },
+      "cname": {
+        "type": "text"
+      },
+      "sendCname": {
+        "type": "text"
+      },
+      "orderNo": {
+        "type": "text",
+        "analyzer": "char_analyzer",
+        "fields": {
+          "keyword": {
+            "type": "keyword"
+          }
+        }
+      },
+      "tradeNo": {
+        "type": "text",
+        "analyzer": "char_analyzer",
+        "fields": {
+          "keyword": {
+            "type": "keyword"
+          }
+        }
+      },
+      "outOrderNo": {
+        "type": "text",
+        "analyzer": "char_analyzer",
+        "fields": {
+          "keyword": {
+            "type": "keyword"
+          }
+        }
+      },
+      "payType": {
+        "type": "integer"
+      },
+      "payAccountNo": {
+        "type": "text"
+      },
+      "receiveAccount": {
+        "type": "text"
+      },
+      "receiveName": {
+        "type": "text",
+        "analyzer": "char_analyzer",
+        "fields": {
+          "keyword": {
+            "type": "keyword"
+          }
+        }
+      },
+      "idCard": {
+        "type": "text"
+      },
+      "mobile": {
+        "type": "text",
+        "analyzer": "char_analyzer",
+        "fields": {
+          "keyword": {
+            "type": "keyword"
+          }
+        }
+      },
+      "amount": {
+        "type": "double"
+      },
+      "totalFee": {
+        "type": "double"
+      },
+      "fee": {
+        "type": "double"
+      },
+      "feeRate": {
+        "type": "double"
+      },
+      "year": {
+        "type": "keyword"
+      },
+      "bankSerialNo": {
+        "type": "keyword"
+      },
+      "status": {
+        "type": "integer"
+      },
+      "endTime": {
+        "type": "date"
+      },
+      "failMsg": {
+        "type": "text"
+      },
+      "createdAt": {
+        "type": "date"
+      },
+      "updatedAt": {
+        "type": "date"
+      },
+      "settleId": {
+        "type": "long"
+      },
+      "settleStatus": {
+        "type": "integer"
+      },
+      "declareStatus": {
+        "type": "integer"
+      },
+      "accountType": {
+        "type": "keyword"
+      },
+      "tax": {
+        "type": "double"
+      },
+      "totalAmount": {
+        "type": "double"
+      }
+    }
+  }
+}
+```
 
 

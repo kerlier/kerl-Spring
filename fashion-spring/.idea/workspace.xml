@@ -44,36 +44,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9948e2e0-f731-4cc5-9d14-9b7874b3f953" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/basic-spring-beanpost-processor/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic-spring-beanpost-processor/src/main/java/com/basic/spring/bean/post/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic-spring-beanpost-processor/src/main/java/com/basic/spring/bean/post/beanNameAware/MyOwnBeanNameAware.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic-spring-beanpost-processor/src/main/java/com/basic/spring/bean/post/component/InitiaBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic-spring-beanpost-processor/src/main/java/com/basic/spring/bean/post/component/My2Component.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic-spring-beanpost-processor/src/main/java/com/basic/spring/bean/post/component/MyConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic-spring-beanpost-processor/src/main/java/com/basic/spring/bean/post/component/MyOwnBeanPostProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic-spring-beanpost-processor/src/main/java/com/basic/spring/bean/post/component/MyOwnComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic-spring-beanpost-processor/src/main/java/com/basic/spring/bean/post/contextAware/ApplicationContextUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic-spring-beanpost-processor/src/main/java/com/basic/spring/bean/post/contextAware/My3Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic-spring-beanpost-processor/src/main/java/com/basic/spring/bean/post/contextAware/MyBean1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic-spring-beanpost-processor/src/main/java/com/basic/spring/bean/post/environmentAware/My4Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic-spring-beanpost-processor/src/main/java/com/basic/spring/bean/post/environmentAware/MyEnvironmentConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic-spring-beanpost-processor/src/main/java/com/basic/spring/bean/post/instantiationAware/My2Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic-spring-beanpost-processor/src/main/java/com/basic/spring/bean/post/instantiationAware/MyInstantiationBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic-spring-beanpost-processor/src/main/java/com/basic/spring/bean/post/instantiationAware/MyOwnInstantiationAwareBeanPostProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic-spring-beanpost-processor/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic-spring-md5/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic-spring-md5/src/main/java/com/basic/spring/md5/MD5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic-spring-md5/src/main/java/com/basic/spring/md5/MdApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic-spring/src/main/java/com/fashion/spring/cache/CacheApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic-spring/src/main/java/com/fashion/spring/cache/OwnCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-spring-file/src/main/java/com/fashion/spring/file/IteMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-spring-file/src/test/java/LongTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-spring/src/main/java/com/fashion/spring/ServiceException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nacos-config/src/main/java/com/nacos/config/application/config/ConfigMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nacos-config/src/test/java/com/test/CacheApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-spring/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/basic-spring/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fashion-spring-listener/src/main/java/com/fashion/spring/listener/MyOwnListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-spring-listener/src/main/java/com/fashion/spring/listener/MyOwnListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fashion-spring-listener/src/main/java/com/fashion/spring/pulisher/MyOwnPublisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-spring-listener/src/main/java/com/fashion/spring/pulisher/MyOwnPublisher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-spring-file/src/main/java/com/fashion/spring/watcher/FileWatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/basic-spring-file/src/main/java/com/fashion/spring/watcher/FileWatcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-spring/src/main/java/com/fashion/spring/controller/ReadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/basic-spring/src/main/java/com/fashion/spring/controller/ReadController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fashion-spring-mybatis-plus/src/main/java/com/fashion/spring/mybatisplus/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-spring-mybatis-plus/src/main/java/com/fashion/spring/mybatisplus/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fashion-spring-mybatis-plus/src/main/java/com/fashion/spring/mybatisplus/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-spring-mybatis-plus/src/main/java/com/fashion/spring/mybatisplus/service/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fashion-spring-mybatis-plus/src/main/java/com/fashion/spring/mybatisplus/service/impl/IUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-spring-mybatis-plus/src/main/java/com/fashion/spring/mybatisplus/service/impl/IUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fashion-spring-redis/src/main/java/com/fashion/spring/redis/controller/RedisController.java" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-spring-redis/src/main/java/com/fashion/spring/redis/controller/RedisController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nacos-config/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nacos-config/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nacos-config/src/main/java/com/nacos/config/application/config/NacosConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/nacos-config/src/main/java/com/nacos/config/application/config/NacosConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nacos-config/src/main/java/com/nacos/config/application/config/NacosConfig3.java" beforeDir="false" afterPath="$PROJECT_DIR$/nacos-config/src/main/java/com/nacos/config/application/config/NacosConfig3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,6 +85,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Pull.Settings">
+    <option name="BRANCH" value="master" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -135,19 +124,15 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../byte-test/bytedance-custom-consumer" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Java/fashion-java" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\git-repo\kerl-Spring\fashion-spring\fashion-spring-yml\src\main\resources" />
-      <recent name="C:\git-repo\kerl-Spring\fashion-spring\image" />
-      <recent name="C:\git-repo\kerl-Spring\fashion-spring\fahion-spring-flowable\src\main\resources" />
-      <recent name="C:\git-repo\kerl-Spring\fashion-spring\fashion-spring-jta\src\main\resources\dataTwoMapper" />
-      <recent name="C:\git-repo\kerl-Spring\fashion-spring\fashion-spring-jta\src\main\resources\dataOneMapper" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\git-repo\kerl-Spring\fashion-spring\fahion-spring-flowable\src\main\resources\processes" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.fashion.nacos.register.api" />
@@ -156,8 +141,12 @@
       <recent name="com.fashion.spring.mybatisplus.mapper" />
       <recent name="com.fashion.jta.datasource.two" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\git-repo\kerl-Spring\fashion-spring\fahion-spring-flowable\src\main\resources\processes" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\git-repo\kerl-Spring\fashion-spring\fashion-spring-yml\src\main\resources" />
+      <recent name="C:\git-repo\kerl-Spring\fashion-spring\image" />
+      <recent name="C:\git-repo\kerl-Spring\fashion-spring\fahion-spring-flowable\src\main\resources" />
+      <recent name="C:\git-repo\kerl-Spring\fashion-spring\fashion-spring-jta\src\main\resources\dataTwoMapper" />
+      <recent name="C:\git-repo\kerl-Spring\fashion-spring\fashion-spring-jta\src\main\resources\dataOneMapper" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.Application (1)">
@@ -174,12 +163,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MdApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.basic.spring.md5.MdApplication" />
-      <module name="basic-spring-md5" />
+    <configuration name="IteMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fashion.spring.file.IteMain" />
+      <module name="basic-spring-file" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.basic.spring.md5.*" />
+          <option name="PATTERN" value="com.fashion.spring.file.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -187,15 +176,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReturnMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.fashion.spring.callable.ReturnMain" />
-      <module name="basic-spring" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.fashion.spring.callable.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration name="LongTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LongTest" />
+      <module name="basic-spring-file" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -212,20 +195,20 @@
       </method>
     </configuration>
     <configuration name="Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="basic-spring-beanpost-processor" />
+      <module name="fashion-spring-mybatis-plus" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.basic.spring.bean.post.*" />
+          <option name="PATTERN" value="com.fashion.spring.mybatisplus.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.basic.spring.bean.post.Application" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fashion.spring.mybatisplus.Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Application (4)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="fashion-spring-listener" />
+    <configuration name="Application (3)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="basic-spring" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.fashion.spring.*" />
@@ -247,10 +230,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.Application (1)" />
-        <item itemvalue="Spring Boot.Application (4)" />
-        <item itemvalue="Application.MdApplication" />
+        <item itemvalue="Application.IteMain" />
         <item itemvalue="Application.FileApplication" />
-        <item itemvalue="Application.ReturnMain" />
+        <item itemvalue="Application.LongTest" />
+        <item itemvalue="Spring Boot.Application (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -287,7 +270,12 @@
       <workItem from="1623984119545" duration="616000" />
       <workItem from="1624324180257" duration="20089000" />
       <workItem from="1625018291681" duration="600000" />
-      <workItem from="1625105518484" duration="31843000" />
+      <workItem from="1625105518484" duration="32455000" />
+      <workItem from="1625533229210" duration="22385000" />
+      <workItem from="1626050470184" duration="7316000" />
+      <workItem from="1626586656208" duration="1805000" />
+      <workItem from="1626655770075" duration="12000" />
+      <workItem from="1626834362738" duration="14394000" />
     </task>
     <servers />
   </component>
@@ -307,70 +295,70 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="121" y="0" key="#Project_Structure" timestamp="1625472309658">
+    <state x="121" y="0" key="#Project_Structure" timestamp="1626834376623">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="121" y="0" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1625472309658" />
-    <state x="446" y="33" key="#com.intellij.ide.util.MemberChooser" timestamp="1625477732368">
+    <state x="121" y="0" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1626834376623" />
+    <state x="446" y="33" key="#com.intellij.ide.util.MemberChooser" timestamp="1627113499855">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="446" y="33" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1625477732368" />
+    <state x="446" y="33" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1627113499855" />
     <state width="402" height="466" key="DebuggerActiveHint" timestamp="1624525213315">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="402" height="466" key="DebuggerActiveHint/0.0.1280.680@0.0.1280.680" timestamp="1624525213315" />
-    <state x="421" y="98" key="FileChooserDialogImpl" timestamp="1625188749558">
+    <state x="421" y="98" key="FileChooserDialogImpl" timestamp="1627182070269">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="98" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1625188749558" />
-    <state width="1237" height="386" key="GridCell.Tab.0.bottom" timestamp="1625477092706">
+    <state x="421" y="98" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1627182070269" />
+    <state width="1237" height="268" key="GridCell.Tab.0.bottom" timestamp="1627113919263">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="386" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1625477092706" />
-    <state width="1237" height="386" key="GridCell.Tab.0.center" timestamp="1625477092706">
+    <state width="1237" height="268" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1627113919263" />
+    <state width="1237" height="268" key="GridCell.Tab.0.center" timestamp="1627113919263">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="386" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1625477092706" />
-    <state width="1237" height="386" key="GridCell.Tab.0.left" timestamp="1625477092706">
+    <state width="1237" height="268" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1627113919263" />
+    <state width="1237" height="268" key="GridCell.Tab.0.left" timestamp="1627113919263">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="386" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1625477092706" />
-    <state width="1237" height="386" key="GridCell.Tab.0.right" timestamp="1625477092706">
+    <state width="1237" height="268" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1627113919263" />
+    <state width="1237" height="268" key="GridCell.Tab.0.right" timestamp="1627113919263">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="386" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1625477092706" />
-    <state width="1237" height="386" key="GridCell.Tab.1.bottom" timestamp="1625477092706">
+    <state width="1237" height="268" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1627113919263" />
+    <state width="1237" height="268" key="GridCell.Tab.1.bottom" timestamp="1627113919264">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="386" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1625477092706" />
-    <state width="1237" height="386" key="GridCell.Tab.1.center" timestamp="1625477092706">
+    <state width="1237" height="268" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1627113919264" />
+    <state width="1237" height="268" key="GridCell.Tab.1.center" timestamp="1627113919263">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="386" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1625477092706" />
-    <state width="1237" height="386" key="GridCell.Tab.1.left" timestamp="1625477092706">
+    <state width="1237" height="268" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1627113919263" />
+    <state width="1237" height="268" key="GridCell.Tab.1.left" timestamp="1627113919263">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="386" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1625477092706" />
-    <state width="1237" height="386" key="GridCell.Tab.1.right" timestamp="1625477092706">
+    <state width="1237" height="268" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1627113919263" />
+    <state width="1237" height="268" key="GridCell.Tab.1.right" timestamp="1627113919263">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="386" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1625477092706" />
-    <state width="1237" height="190" key="GridCell.Tab.2.bottom" timestamp="1625472581752">
+    <state width="1237" height="268" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1627113919263" />
+    <state width="1237" height="350" key="GridCell.Tab.2.bottom" timestamp="1625736027796">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="190" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1625472581752" />
-    <state width="1237" height="190" key="GridCell.Tab.2.center" timestamp="1625472581752">
+    <state width="1237" height="350" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1625736027796" />
+    <state width="1237" height="350" key="GridCell.Tab.2.center" timestamp="1625736027795">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="190" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1625472581752" />
-    <state width="1237" height="190" key="GridCell.Tab.2.left" timestamp="1625472581752">
+    <state width="1237" height="350" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1625736027795" />
+    <state width="1237" height="350" key="GridCell.Tab.2.left" timestamp="1625736027795">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="190" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1625472581752" />
-    <state width="1237" height="190" key="GridCell.Tab.2.right" timestamp="1625472581752">
+    <state width="1237" height="350" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1625736027795" />
+    <state width="1237" height="350" key="GridCell.Tab.2.right" timestamp="1625736027796">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="190" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1625472581752" />
+    <state width="1237" height="350" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1625736027796" />
     <state x="171" y="0" key="Maven.ArtifactSearchDialog" timestamp="1623314775985">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -379,10 +367,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="56" y="10" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1625466249479" />
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1625476832074">
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1627113616357">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1625476832074" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1627113616357" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -396,6 +384,39 @@
           <url>file://$PROJECT_DIR$/basic-spring-beanpost-processor/src/main/java/com/basic/spring/bean/post/instantiationAware/MyOwnInstantiationAwareBeanPostProcessor.java</url>
           <line>54</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/alibaba/nacos/nacos-spring-context/0.2.2-RC1/nacos-spring-context-0.2.2-RC1-sources.jar!/com/alibaba/nacos/spring/context/event/config/NacosConfigReceivedEvent.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/alibaba/nacos/nacos-spring-context/0.2.2-RC1/nacos-spring-context-0.2.2-RC1-sources.jar!/com/alibaba/nacos/spring/context/annotation/config/NacosValueAnnotationBeanPostProcessor.java</url>
+          <line>205</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/alibaba/nacos/nacos-spring-context/0.3.6/nacos-spring-context-0.3.6-sources.jar!/com/alibaba/nacos/spring/context/annotation/config/NacosValueAnnotationBeanPostProcessor.java</url>
+          <line>214</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/alibaba/nacos/nacos-spring-context/0.3.6/nacos-spring-context-0.3.6-sources.jar!/com/alibaba/nacos/spring/context/annotation/config/NacosValueAnnotationBeanPostProcessor.java</url>
+          <line>143</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/basic-spring-file/src/main/java/com/fashion/spring/watcher/FileWatcher.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/fashion-spring-mybatis-plus/src/main/java/com/fashion/spring/mybatisplus/service/IUserService.java</url>
+          <line>16</line>
+          <properties class="com.fashion.spring.mybatisplus.service.IUserService" method="update">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

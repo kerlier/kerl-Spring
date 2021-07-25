@@ -6,6 +6,7 @@ import com.fashion.spring.mybatisplus.mapper.UserInfoMapper;
 import com.fashion.spring.mybatisplus.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -33,5 +34,18 @@ public class IUserServiceImpl implements IUserService {
             return userInfos.get(0);
         }
         return null;
+    }
+
+    @Transactional(rollbackFor = Exception.class)
+    @Override
+    public void update(List<UserInfo> userInfos)  throws RuntimeException{
+        int i =0;
+        for (UserInfo userInfo : userInfos) {
+            i ++;
+            userInfoMapper.updateById(userInfo);
+            if(i == 2){
+               throw new RuntimeException("测试");
+            }
+        }
     }
 }
