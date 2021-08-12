@@ -2,13 +2,12 @@ package com.fashion.spring.controller;
 
 
 import com.fashion.spring.ServiceException;
+import com.fashion.spring.pojo.ApplicationRequest;
 import com.fashion.spring.service.PropertyService;
 import com.google.common.cache.CacheBuilder;
 import com.google.common.cache.CacheLoader;
 import com.google.common.cache.LoadingCache;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.Resource;
@@ -42,10 +41,11 @@ public class ReadController {
                 });
     }
 
-    @RequestMapping("/getApplicationName")
-    public String getApplicationName(){
-        return propertyService.getApplicationName();
+    @GetMapping("/getApplicationName")
+    public String getApplicationName(@RequestBody ApplicationRequest applicationRequest){
+        return applicationRequest.getName();
     }
+
     @RequestMapping("/cache")
     public String getFromCache(@RequestParam Long uid){
         return build.getUnchecked(uid);

@@ -1,0 +1,1 @@
+TraceRpcFilter=com.fashion.nacos.register.api.aop.TraceRpcFilter

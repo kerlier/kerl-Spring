@@ -10,7 +10,9 @@ dubbo:
     check: false
     parameters:
       namespace: f809bd6f-e655-4943-b842-4b1b8e0c5157
-  provider:
-    serialization: kryo
+#  provider:
+#    serialization: kryo
 server:
   port: 8099
+logging:
+  config: classpath:logback-custom.xml

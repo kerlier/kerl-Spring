@@ -13,16 +13,16 @@
 
     <dependencies>
 
-        <dependency>
-            <groupId>com.esotericsoftware</groupId>
-            <artifactId>kryo</artifactId>
-            <version>4.0.0</version>
-        </dependency>
-        <dependency>
-            <groupId>de.javakaffee</groupId>
-            <artifactId>kryo-serializers</artifactId>
-            <version>0.45</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.esotericsoftware</groupId>-->
+<!--            <artifactId>kryo</artifactId>-->
+<!--            <version>4.0.0</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>de.javakaffee</groupId>-->
+<!--            <artifactId>kryo-serializers</artifactId>-->
+<!--            <version>0.45</version>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>com.fashion.spring</groupId>
             <artifactId>fashion-nacos-register-api</artifactId>
@@ -36,6 +36,12 @@
             <groupId>org.apache.dubbo</groupId>
             <artifactId>dubbo-registry-nacos</artifactId>
             <version>2.7.5</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>log4j</artifactId>
+                    <groupId>log4j</groupId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.apache.dubbo</groupId>
