@@ -44,26 +44,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9948e2e0-f731-4cc5-9d14-9b7874b3f953" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/basic-spring/src/main/java/com/fashion/spring/pojo/ApplicationRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic-spring/src/test/java/com/fashion/spring/PersonDate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic-spring/src/test/java/com/fashion/spring/WhileTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fashion-nacos-register-api/src/main/java/com/fashion/nacos/register/api/aop/TraceIdFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fashion-nacos-register-api/src/main/java/com/fashion/nacos/register/api/aop/TraceRpcFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fashion-nacos-register-api/src/main/resources/META-INF/dubbo/org.apache.dubbo.rpc.Filter" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fashion-nacos-register-api/src/main/resources/META-INF/spring.factories" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fashion-nacos-register-consumer/src/main/resources/logback-custom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fashion-nacos-register-provider/src/main/resources/logback-custom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fashion-spring-rocketmq/src/main/java/com/fashion/spring/rocketmq/producer/MySqlTransactionListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fashion-spring-rocketmq/src/main/java/com/fashion/spring/rocketmq/producer/TxRocketmqProducer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic-spring/src/main/java/com/fashion/spring/controller/ReadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/basic-spring/src/main/java/com/fashion/spring/controller/ReadController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fashion-nacos-register-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-nacos-register-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fashion-nacos-register-consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-nacos-register-consumer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fashion-nacos-register-consumer/src/main/java/com/fashion/nacos/register/consumer/controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-nacos-register-consumer/src/main/java/com/fashion/nacos/register/consumer/controller/RegisterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fashion-nacos-register-consumer/src/main/java/com/fashion/nacos/register/main/TestMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-nacos-register-consumer/src/main/java/com/fashion/nacos/register/main/TestMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fashion-nacos-register-consumer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-nacos-register-consumer/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fashion-nacos-register-consumer/src/main/resources/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fashion-nacos-register-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-nacos-register-provider/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fashion-nacos-register-provider/src/main/java/com/fashion/nacos/register/provider/service/TestServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-nacos-register-provider/src/main/java/com/fashion/nacos/register/provider/service/TestServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fashion-nacos-register-provider/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-nacos-register-provider/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fashion-spring-rocketmq/src/main/java/com/fashion/spring/rocketmq/consumer/RocketmqListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-spring-rocketmq/src/main/java/com/fashion/spring/rocketmq/consumer/RocketmqListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fashion-spring-rocketmq/src/main/java/com/fashion/spring/rocketmq/controller/MessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-spring-rocketmq/src/main/java/com/fashion/spring/rocketmq/controller/MessageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fashion-spring-rocketmq/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/fashion-spring-rocketmq/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,22 +139,9 @@
       <recent name="C:\git-repo\kerl-Spring\fashion-spring\fahion-spring-flowable\src\main\resources\processes" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application (3)">
+  <component name="RunManager" selected="Spring Boot.Application (4)">
     <configuration name="CallableUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.fashion.spring.callable.CallableUtil" />
-      <module name="basic-spring" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.fashion.spring.callable.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReturnMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.fashion.spring.callable.ReturnMain" />
       <module name="basic-spring" />
       <extension name="coverage">
         <pattern>
@@ -232,6 +205,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Application (4)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="fashion-spring-rocketmq" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fashion.spring.rocketmq.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fashion.spring.rocketmq.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="fashion-spring-yml" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.fashion.spring.yml.Application" />
@@ -241,11 +227,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.Application (4)" />
         <item itemvalue="Spring Boot.Application (3)" />
         <item itemvalue="Spring Boot.Application (1)" />
         <item itemvalue="Spring Boot.Application (2)" />
         <item itemvalue="Application.CallableUtil" />
-        <item itemvalue="Application.ReturnMain" />
       </list>
     </recent_temporary>
   </component>
@@ -293,7 +279,7 @@
       <workItem from="1627347101339" duration="1143000" />
       <workItem from="1627374378664" duration="2439000" />
       <workItem from="1627731767322" duration="8119000" />
-      <workItem from="1628209720403" duration="8502000" />
+      <workItem from="1628209720403" duration="15366000" />
     </task>
     <servers />
   </component>
@@ -317,10 +303,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="121" y="0" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1628757647801" />
-    <state x="446" y="33" key="#com.intellij.ide.util.MemberChooser" timestamp="1628758249615">
+    <state x="446" y="33" key="#com.intellij.ide.util.MemberChooser" timestamp="1629187084872">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="446" y="33" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1628758249615" />
+    <state x="446" y="33" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1629187084872" />
     <state width="402" height="466" key="DebuggerActiveHint" timestamp="1624525213315">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -329,38 +315,38 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="98" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1628125077389" />
-    <state width="1237" height="365" key="GridCell.Tab.0.bottom" timestamp="1628759915205">
+    <state width="1237" height="442" key="GridCell.Tab.0.bottom" timestamp="1629189050836">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="365" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1628759915205" />
-    <state width="1237" height="365" key="GridCell.Tab.0.center" timestamp="1628759915205">
+    <state width="1237" height="442" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1629189050836" />
+    <state width="1237" height="442" key="GridCell.Tab.0.center" timestamp="1629189050836">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="365" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1628759915205" />
-    <state width="1237" height="365" key="GridCell.Tab.0.left" timestamp="1628759915205">
+    <state width="1237" height="442" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1629189050836" />
+    <state width="1237" height="442" key="GridCell.Tab.0.left" timestamp="1629189050836">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="365" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1628759915205" />
-    <state width="1237" height="365" key="GridCell.Tab.0.right" timestamp="1628759915205">
+    <state width="1237" height="442" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1629189050836" />
+    <state width="1237" height="442" key="GridCell.Tab.0.right" timestamp="1629189050836">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="365" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1628759915205" />
-    <state width="1237" height="365" key="GridCell.Tab.1.bottom" timestamp="1628759915205">
+    <state width="1237" height="442" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1629189050836" />
+    <state width="1237" height="442" key="GridCell.Tab.1.bottom" timestamp="1629189050836">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="365" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1628759915205" />
-    <state width="1237" height="365" key="GridCell.Tab.1.center" timestamp="1628759915205">
+    <state width="1237" height="442" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1629189050836" />
+    <state width="1237" height="442" key="GridCell.Tab.1.center" timestamp="1629189050836">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="365" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1628759915205" />
-    <state width="1237" height="365" key="GridCell.Tab.1.left" timestamp="1628759915205">
+    <state width="1237" height="442" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1629189050836" />
+    <state width="1237" height="442" key="GridCell.Tab.1.left" timestamp="1629189050836">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="365" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1628759915205" />
-    <state width="1237" height="365" key="GridCell.Tab.1.right" timestamp="1628759915205">
+    <state width="1237" height="442" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1629189050836" />
+    <state width="1237" height="442" key="GridCell.Tab.1.right" timestamp="1629189050836">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="365" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1628759915205" />
+    <state width="1237" height="442" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1629189050836" />
     <state width="1237" height="286" key="GridCell.Tab.2.bottom" timestamp="1628758538001">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -385,10 +371,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="56" y="10" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1625466249479" />
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1628754870659">
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1629187612957">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1628754870659" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1629187612957" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
